@@ -6,9 +6,11 @@ package Components;
  */
 public class TeDaGenLogEntry {
     private String logEntry;
+    private logType type;
 
-    public TeDaGenLogEntry(String logEntry) {
+    public TeDaGenLogEntry(String logEntry, logType type) {
         this.logEntry = logEntry;
+        this.type     = type;
     }
 
     @Override
@@ -16,3 +18,4 @@ public class TeDaGenLogEntry {
         return logEntry.toString();
     }
 }
+

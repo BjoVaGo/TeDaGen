@@ -3,6 +3,8 @@
  */
 package Components;
 
+import java.util.Random;
+
 /**
  * @author Kenny Janssens & Bjorn Vangompel
  *
@@ -10,13 +12,13 @@ package Components;
 public class TeDaGenCore {
 	
 	/**
-	 * Returns a random integer 
+	 * Returns a random integer
 	 *
 	 * @return a random integer.
-	 * @see java.lang.Math#random()
+	 * @see java.util.Random#nextInt()
 	 */
 	protected static Integer getRandomInt(){
-		return (int) (Math.random());  // or use Random or whatever
+		return new Random().nextInt();
 	}
 	
 	/**
@@ -29,7 +31,7 @@ public class TeDaGenCore {
 	 * @see java.lang.Math#random()
 	 */
 	protected static Integer getRandomInt( int max){
-		return (int) (Math.random() * (max+ 1));  // or use Random or whatever
+		return (int) (Math.random() * (max+ 1));
 	}
 	
 	/**

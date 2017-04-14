@@ -9,9 +9,9 @@ public class LogSample {
 
     public static void main(String[] args) {
         TeDaGenLog logger = new TeDaGenLog();
-        logger.add("this is the error message");
-        logger.add("another error message");
-        System.out.println("All error messages :");
+        logger.addError("this is the error message");
+        logger.addWarning("this is a warning message");
+        System.out.println("All messages :");
         logger.print();
         logger.clear();
         System.out.println("No More error messages :");
