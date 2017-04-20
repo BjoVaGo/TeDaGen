@@ -6,7 +6,7 @@ package Components;
 import java.util.Random;
 
 /**
- * @author Kenny Janssens & Bjorn Vangompel
+ * @author Kenny Janssens - Bjorn Vangompel
  *
  */
 public class TeDaGenCore {

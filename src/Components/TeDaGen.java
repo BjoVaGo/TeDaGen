@@ -56,9 +56,6 @@ public class TeDaGen {
             }
         }
 
-
-
-
         Instant end = Instant.now();
         log.addMonitor("End of Generation -- time taken: ".concat(toString().valueOf(Duration.between(start, end))));
         log.print();

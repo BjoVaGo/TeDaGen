@@ -2,8 +2,6 @@ package examples;
 
 import Components.TeDaGenFunctionMapper;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 /**
  * Created by bjornvangompel on 07/04/2017.

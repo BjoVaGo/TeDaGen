@@ -4,7 +4,7 @@
 package Components;
 
 /**
- * @author Kenny Janssens & Bjorn Vangompel
+ * @author Kenny Janssens - Bjorn Vangompel
  *
  */
 public class TeDaGenNumber extends TeDaGenCore {
@@ -13,7 +13,7 @@ public class TeDaGenNumber extends TeDaGenCore {
 	 * 
 	 * 
 	 * 
-	 * @return 
+	 * @return  the random binary number
 	 * 
 	 */
 	public static Integer getBinary(){

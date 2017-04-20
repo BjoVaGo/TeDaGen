@@ -4,10 +4,9 @@
 package examples;
 
 import Components.TeDaGenString;
-import Components.TeDaGenString.Case;
 
 /**
- * @author Kenny Janssens & Bjorn Vangompel
+ * @author Kenny Janssens - Bjorn Vangompel
  *
  */
 
@@ -16,7 +15,7 @@ public class StringSample {
 	public static void main(String[] args) {
 		// Basic stuff
 		System.out.println(TeDaGenString.getAscii());
-		System.out.println(TeDaGenString.getChar(Case.u));
+		System.out.println(TeDaGenString.getChar());
 		System.out.println(TeDaGenString.getConsonant());
 		System.out.println(TeDaGenString.getVowel());
 		
@@ -24,8 +23,7 @@ public class StringSample {
 		System.out.println(TeDaGenString.getString());
 		System.out.println(TeDaGenString.getString(20));
 		System.out.println(TeDaGenString.ucFirst("test"));
-		
-		
+
 		// sentence
 		System.out.println(TeDaGenString.getSentence(5));
 		System.out.println(TeDaGenString.getSentence(3,5));
