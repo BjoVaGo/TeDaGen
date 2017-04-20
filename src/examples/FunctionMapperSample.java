@@ -1,6 +1,6 @@
 package examples;
 
-import Components.TeDaGenFunctionMapper;
+import app.TeDaGenFunctionMapper;
 
 
 /**

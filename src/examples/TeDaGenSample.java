@@ -1,7 +1,7 @@
 package examples;
 
-import Components.OutputGenerators.consoleOutputGenerator;
-import Components.TeDaGen;
+import app.OutputGenerators.consoleOutputGenerator;
+import app.TeDaGen;
 
 /**
  * Created by bjornvangompel on 22/03/2017.

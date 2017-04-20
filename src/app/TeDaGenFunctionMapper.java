@@ -1,4 +1,4 @@
-package Components;
+package app;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -13,10 +13,10 @@ public class TeDaGenFunctionMapper {
 
         /**
          * All functions should be mapped in here using regex
-         * later we can change this with a config file
+         * later we can change this with a app.config file
          */
-        mappedStr = mapFunction(mappedStr,"int\\(\\)", "Components.TeDaGenNumber","getRandomInt");
-        mappedStr = mapFunction(mappedStr,"string\\(\\)", "Components.TeDaGenString","getString");
+        mappedStr = mapFunction(mappedStr,"int\\(\\)", "components.TeDaGenNumber","getRandomInt");
+        mappedStr = mapFunction(mappedStr,"string\\(\\)", "components.TeDaGenString","getString");
 
         return mappedStr;
     }

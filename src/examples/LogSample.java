@@ -1,6 +1,6 @@
 package examples;
 
-import Components.TeDaGenLog;
+import app.TeDaGenLog;
 
 /**
  * Created by bjornvangompel on 07/03/2017.

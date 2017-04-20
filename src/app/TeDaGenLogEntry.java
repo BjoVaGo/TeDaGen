@@ -1,4 +1,4 @@
-package Components;
+package app;
 
 /**
  * Created by bjorn vangompel on 07/03/2017.

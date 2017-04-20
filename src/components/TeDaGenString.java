@@ -1,18 +1,14 @@
 /**
  * 
  */
-package Components;
-
-import java.util.Iterator;
+package components;
 
 /**
  * @author Kenny Janssens - Bjorn Vangompel
  *
  */
 public class TeDaGenString extends TeDaGenCore {
-	public static enum Case {u, l};
-
-	// TODO check comment and ut
+	public enum Case {u, l}
 
 	/**
 	 * This function generates random characters in the ASCII character-encoding scheme originally based on the English alphabet.
@@ -148,7 +144,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * @return Returns one random consonant
 	 */
 	public static char getConsonant() {
-		int rnd = getRandomInt(TeDaGenConfig.consonant.length); 
+		int rnd = getRandomInt(TeDaGenConfig.consonant.length - 1);
 		return TeDaGenConfig.consonant [rnd];
 	}
 	
@@ -160,7 +156,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * @return Returns one random vowel
 	 */
 	public static char getVowel() {
-		int rnd = getRandomInt(TeDaGenConfig.vowel.length); 
+		int rnd = getRandomInt(TeDaGenConfig.vowel.length - 1);
 		return TeDaGenConfig.vowel [rnd];
 	}
 	
@@ -261,8 +257,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * As the words are randomly generated, there are not verbs or subjects as traditionally expected and there are no ideas expressed.
 	 * The sentence always ends in a dot, question mark or exclamation point character.
 	 * Only standard Latin characters will be returned.
-	 * 
-	 * @param words The number of words in the sentence
+	 *
 	 * @return Returns a sentence with 3 to 12 words
 	 * 
 	 */
@@ -276,7 +271,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * Only standard Latin characters will be returned.
 	 * With this method, you no longer need to rely on the old Lorem Ipsum text.
 	 * 
-	 * @param words The number of sentences in the paragraph
+	 * @param sentences The number of sentences in the paragraph
 	 * @return a number of sentences that form a paragraph
 	 * 
 	 */
@@ -314,8 +309,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * Generates a paragraph with 3 to 12 sentences.
 	 * Only standard Latin characters will be returned.
 	 * With this method, you no longer need to rely on the old Lorem Ipsum text.
-	 * 
-	 * @param words The number of sentences in the paragraph
+	 *
 	 * @return Returns a paragraph with 3 to 12 sentences
 	 * 
 	 */
@@ -353,7 +347,7 @@ public class TeDaGenString extends TeDaGenCore {
 	 * 
 	 * 
 	 * @param str The input string that will be converted.
-	 * @return 
+	 * @return  returns the trimmed string
 	 */
 	public static String trim(String str) {
 		return str.trim();

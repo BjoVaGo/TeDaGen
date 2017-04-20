@@ -3,7 +3,7 @@
  */
 package examples;
 
-import Components.TeDaGenString;
+import components.TeDaGenString;
 
 /**
  * @author Kenny Janssens - Bjorn Vangompel

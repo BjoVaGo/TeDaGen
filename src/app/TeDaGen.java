@@ -1,12 +1,10 @@
-package Components;
+package app;
 
-import Components.OutputGenerators.IOutputGenerator;
+import app.OutputGenerators.IOutputGenerator;
 
 import java.time.Duration;
 import java.time.Instant;
 import java.util.Date;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Main tedagen class where all the magic starts
@@ -28,6 +26,7 @@ public class TeDaGen {
      *
      * @param strPattern The test data generation pattern
      * @param iterations The Number of iterations to generate
+     * @param output  the output generator to be used
      * @return returns the output in the form of an output generator
      */
     public IOutputGenerator generate(String strPattern, int iterations, IOutputGenerator output) {

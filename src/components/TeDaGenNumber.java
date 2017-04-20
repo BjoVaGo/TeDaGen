@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Components;
+package components;
 
 /**
  * @author Kenny Janssens - Bjorn Vangompel
@@ -29,29 +29,7 @@ public class TeDaGenNumber extends TeDaGenCore {
 	public static Integer getRandomInt(){
 		return TeDaGenCore.getRandomInt();  // or use Random or whatever
 	}
-	
-	/**
-	 * 
-	 * 
-	 * 
-	 * @return 
-	 * 
-	 */
-	public static Integer getHex(){
-		return 0; 
-	}
-	
-	
-	/**
-	 * 
-	 * 
-	 * 
-	 * @return 
-	 * 
-	 */
-	public static Integer getOct(){
-		return 0; 
-	}
+
 	
 	
 }

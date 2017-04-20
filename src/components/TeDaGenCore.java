@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Components;
+package components;
 
 import java.util.Random;
 

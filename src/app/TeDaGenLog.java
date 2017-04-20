@@ -1,4 +1,4 @@
-package Components;
+package app;
 
 import java.util.LinkedList;
 import java.util.List;

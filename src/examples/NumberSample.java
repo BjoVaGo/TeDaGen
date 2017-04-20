@@ -3,18 +3,14 @@
  */
 package examples;
 
-import Components.TeDaGenNumber;
-import Components.TeDaGenString;
+import components.TeDaGenNumber;
 
 /**
- * @author Kenny Janssens & Bjorn Vangompel
+ * @author Kenny Janssens - Bjorn Vangompel
  *
  */
 public class NumberSample {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// Basic stuff
 		System.out.println(TeDaGenNumber.getBinary());

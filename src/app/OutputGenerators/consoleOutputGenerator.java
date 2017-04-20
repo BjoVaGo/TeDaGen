@@ -1,4 +1,4 @@
-package Components.OutputGenerators;
+package app.OutputGenerators;
 
 /**
  *
