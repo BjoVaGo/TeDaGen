@@ -1,0 +1,1727 @@
+<pre>
+
+/**
+	* Generates a random alphabetical character in lower-or uppercase, depending on the input parameter.Note: Only standard Latin characters are returned [a-zA-Z]
+	*
+	* @param case Determines the case of the character returned. The case can be "u" for uppercase or "l" for lower case.Defaults to "l"This parameter is optional.
+	* @return Returns an alphabetical character on success
+	* @see getString()
+	* @see getUnicode()
+	* @see getVowel()
+	* @see getConsonant()
+	* @see getAscii()
+	*
+	*/
+	public static String getChar ( [$case = l] ) {
+		return char;
+	}
+
+
+
+
+/**
+	* Returns a positive number, based on the input parameters.Note: The Integer returned is not mathematically correct as Integers are like whole numbers, but they also include negative numbers (no fractions allowed!)Source: <a href="http://www.mathsisfun.com/whole-numbers.html">http://www.mathsisfun.com/whole-numbers.html</a>
+	*
+	* @param length The fixed string length of the integer thet will be returned.
+	* @param minumum The minimum value of the integer returned
+	* @param maximum The maximum value of the integer returned
+	* @return Returns an integer from 0 to 9 included
+	* @see getHex()
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getModulo()
+	* @see getRange()
+	* @see getOct()
+	*
+	*/
+	public static String getInt () {
+		return int;
+	}
+
+
+
+
+/**
+	* Returns a positive number, based on the input parameters.Note: The Integer returned is not mathematically correct as Integers are like whole numbers, but they also include negative numbers (no fractions allowed!)Source: <a href="http://www.mathsisfun.com/whole-numbers.html">http://www.mathsisfun.com/whole-numbers.html</a>
+	*
+	* @param length The fixed string length of the integer thet will be returned.
+	* @param minumum The minimum value of the integer returned
+	* @param maximum The maximum value of the integer returned
+	* @return Returns an integer as a string with a length of $length characters
+	* @see getHex()
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getModulo()
+	* @see getRange()
+	* @see getOct()
+	*
+	*/
+	public static String getInt ( $length ) {
+		return int;
+	}
+
+
+
+
+/**
+	* Returns a positive number, based on the input parameters.Note: The Integer returned is not mathematically correct as Integers are like whole numbers, but they also include negative numbers (no fractions allowed!)Source: <a href="http://www.mathsisfun.com/whole-numbers.html">http://www.mathsisfun.com/whole-numbers.html</a>
+	*
+	* @param length The fixed string length of the integer thet will be returned.
+	* @param minumum The minimum value of the integer returned
+	* @param maximum The maximum value of the integer returned
+	* @return Returns an integer from $minimum to $maximum inclusive
+	* @see getHex()
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getModulo()
+	* @see getRange()
+	* @see getOct()
+	*
+	*/
+	public static String getInt ( $minimum , $maximum ) {
+		return int;
+	}
+
+
+
+
+/**
+	* Returns a string with random alphabetical lower case characters.For readability, the string returned will always start with a consonant and will be interspersed with a vowel.Note: Only standard Latin characters are returned.
+	*
+	* @param length the fixed length of the output string
+	* @param minimum the minimum length of the output string
+	* @param maximum the maximum length of the output string
+	* @return Returns a string of random characters with a fixed length $length
+	* @see getSentence()
+	* @see getParagraph()
+	* @see getVowel()
+	* @see getConsonant()
+	* @see getAscii()
+	*
+	*/
+	public static String getString ( $length ) {
+		return string;
+	}
+
+
+
+
+/**
+	* Returns a string with random alphabetical lower case characters.For readability, the string returned will always start with a consonant and will be interspersed with a vowel.Note: Only standard Latin characters are returned.
+	*
+	* @param length the fixed length of the output string
+	* @param minimum the minimum length of the output string
+	* @param maximum the maximum length of the output string
+	* @return Returns a string of random characters with a random length between $minimum and $maximum
+	* @see getSentence()
+	* @see getParagraph()
+	* @see getVowel()
+	* @see getConsonant()
+	* @see getAscii()
+	*
+	*/
+	public static String getString ( $minimum, $maximum ) {
+		return string;
+	}
+
+
+
+
+/**
+	* Returns an IPv4 (Internet Protocol) address used in network addressing.
+	*
+	* @return Returns an IP address in the range from 1:0:0:0 to  255:255:255:255
+	* @see getMac()
+	*
+	*/
+	public static String getIp () {
+		return ip;
+	}
+
+
+
+
+/**
+	* Returns a Media Access Control(MAC) address used in network addressing. This is the hardware-address of a device (computer, router, smart-phone, etc).Note: If you need MAC addresses with upper case notation, use the <strong>upper()</strong> modifier function.
+	*
+	* @return Returns an artificial MAC address (lower case hexadecimal characters).
+	*
+	*/
+	public static String getMac () {
+		return mac;
+	}
+
+
+
+
+/**
+	* Returns a random e-mail address.Note: These e-mail addresses are non existing addresses and should not be used to send e-mails to.To generate random e-mail addresses with a specific domain name, use the list function: string(3,6).string(3,6)@list(yahoo.com,gmail.com,outlook.com)
+	*
+	* @return Returns an e-mail address
+	* @see getFname()
+	* @see getLname()
+	*
+	*/
+	public static String getEmail () {
+		return email;
+	}
+
+
+
+
+/**
+	* The Unicode function returns all types of character for multiple languages (also UTF-8).Unicode contains special languages and graphical characters not commonly used in standard Latin texts.Unicode characters are perfect to test input fields in your application and verify how texts are stored in the database. If you want to upset your DBA use the pattern below to generate random characters from the "Unified Canadian Aboriginal Syllabics" unicode range :)<div class="code">unicode(60,24) - will generate 60 characters from range 24 (Unified Canadian Aboriginal Syllabics)</div>If you want to copy &amp; paste these characters to another program, make sure the target application is UTF-8 encoded.Unicode / UTF-8 ranges & references:<ul>	<li><a href="http://www.utf8-chartable.de/unicode-utf8-table.pl">http://www.utf8-chartable.de/unicode-utf8-table.pl</a></li>	<li><a href="http://jrgraphix.net/r/Unicode/0020-007F">http://jrgraphix.net/r/Unicode/0020-007F</a></li><li><a href="http://nl.wikipedia.org/wiki/Unicode">http://nl.wikipedia.org/wiki/Unicode</a></li></ul>
+	*
+	* @param length The length of the string to generate
+	* @param rangeMin The minimum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param rangeMax The maximum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param range The predefined range that the generator engine uses to pick characters from.These are the supported pre-defined ranges:<table><tr><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>0</td><td>Latin</td></tr>	<tr><td>1</td><td>Latin-1 Supplement</td></tr>	<tr><td>2</td><td>Latin-Extended A</td></tr>	<tr><td>3</td><td>Latin-Extended B</td></tr>	<tr><td>4</td><td>IPA Extentions</td></tr>	<tr><td>5</td><td>Greek and Coptic</td></tr>	<tr><td>6</td><td>Cyrillic</td></tr>	<tr><td>7</td><td>Cyrillic Supplementary</td></tr>	<tr><td>8</td><td>Armenian</td></tr>	<tr><td>9</td><td>Hebrew</td></tr>	<tr><td>10</td><td>Arabic</td></tr>	<tr><td>11</td><td>Syriac</td></tr>	<tr><td>12</td><td>Thaana</td></tr>	<tr><td>13</td><td>Devanagari</td></tr>	<tr><td>14</td><td>Bengali</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>15</td><td>Gurmukhi</td></tr>	<tr><td>16</td><td>Gujarati</td></tr>	<tr><td>17</td><td>Oriya</td></tr>	<tr><td>18</td><td>Tamil</td></tr>	<tr><td>19</td><td>Malayalam</td></tr>	<tr><td>20</td><td>Thai</td></tr>	<tr><td>21</td><td>Georgian</td></tr>	<tr><td>22</td><td>Hangul Jamo</td></tr>	<tr><td>23</td><td>Ethiopic</td></tr>	<tr><td>24</td><td>Cherokee</td></tr>	<tr><td>25</td><td>Unified Canadian Aboriginal Syllabics</td></tr>	<tr><td>26</td><td>Khmer</td></tr>	<tr><td>27</td><td>Khmer Symbols</td></tr>	<tr><td>28</td><td>Mongolian</td></tr>	<tr><td>29</td><td>Phonetic Extensions</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>30</td><td>Latin Extended Additional</td></tr>	<tr><td>31</td><td>Currency Symbols</td></tr>	<tr><td>32</td><td>Letterlike Symbols</td></tr>	<tr><td>33</td><td>Number Forms</td></tr>	<tr><td>34</td><td>Arrows</td></tr>	<tr><td>35</td><td>Mathematical Operators</td></tr>	<tr><td>36</td><td>Enclosed Alphanumerics</td></tr>	<tr><td>37</td><td>Box Drawing</td></tr>	<tr><td>38</td><td>Geometric Shapes</td></tr>	<tr><td>39</td><td>Miscellaneous Symbols</td></tr>	<tr><td>40</td><td>Supplemental Arrows-B</td></tr>	<tr><td>41</td><td>Kangxi Radicals</td></tr>	<tr><td>42</td><td>CJK Symbols and Punctuation</td></tr>	<tr><td>43</td><td>Hiragana</td></tr>	<tr><td>44</td><td>Katakana</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>45</td><td>Bopomofo</td></tr>	<tr><td>46</td><td>Hangul Compatibility Jamo</td></tr>	<tr><td>47</td><td>Enclosed CJK Letters and Months</td></tr>	<tr><td>48</td><td>CJK Compatibility</td></tr>	<tr><td>49</td><td>CJK Unified Ideographs Extension A</td></tr>	<tr><td>50</td><td>CJK Unified Ideographs</td></tr>	<tr><td>51</td><td>Yi Syllables</td></tr>	<tr><td>52</td><td>Yi Radicals</td></tr>	<tr><td>53</td><td>Hangul Syllables</td></tr>	<tr><td>54</td><td>CJK Compatibility Ideographs</td></tr>	<tr><td>55</td><td>Arabic Presentation Forms-A</td></tr>	<tr><td>56</td><td>CJK Compatibility Forms</td></tr>	<tr><td>57</td><td>Arabic Presentation Forms-B</td></tr>	<tr><td>58</td><td>Mathematical Alphanumeric Symbols</td></tr>	<tr><td>59</td><td>CJK Unified Ideographs Extension B</td></tr>	</table></td></tr></table>
+	* @return Returns a printable unicode character from any of the predefined ranges.
+	* @see getAscii()
+	*
+	*/
+	public static String getUnicode () {
+		return unicode;
+	}
+
+
+
+
+/**
+	* Returns a random hexadecimal value, or converts a decimal to hexadecimal based on the input parameters.A hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. Source: <a href="http://en.wikipedia.org/wiki/Hexadecimal">http://en.wikipedia.org/wiki/Hexadecimal</a>
+	*
+	* @param decimal The decimal value to convert.$decimal must be a decimal integer.
+	* @param minimum The minimum value for the range in which the hexadecimal value is randomly generated.$minimum must be a decimal integer.
+	* @param maximum The maximum value for the range in which the hexadecimal value is randomly generated.$maximum must be a decimal integer larger than $minimum.
+	* @return Returns a hexadecimal value in the range 0 to F (0 to 15 decimal)
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getOct()
+	*
+	*/
+	public static String getHex () {
+		return hex;
+	}
+
+
+
+
+/**
+	* Returns a random hexadecimal value, or converts a decimal to hexadecimal based on the input parameters.A hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. Source: <a href="http://en.wikipedia.org/wiki/Hexadecimal">http://en.wikipedia.org/wiki/Hexadecimal</a>
+	*
+	* @param decimal The decimal value to convert.$decimal must be a decimal integer.
+	* @param minimum The minimum value for the range in which the hexadecimal value is randomly generated.$minimum must be a decimal integer.
+	* @param maximum The maximum value for the range in which the hexadecimal value is randomly generated.$maximum must be a decimal integer larger than $minimum.
+	* @return Converts a decimal value to a Hexadecimal value
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getOct()
+	*
+	*/
+	public static String getHex ( $decimal ) {
+		return hex;
+	}
+
+
+
+
+/**
+	* Returns a random hexadecimal value, or converts a decimal to hexadecimal based on the input parameters.A hexadecimal (also base 16, or hex) is a positional numeral system with a radix, or base, of 16. Source: <a href="http://en.wikipedia.org/wiki/Hexadecimal">http://en.wikipedia.org/wiki/Hexadecimal</a>
+	*
+	* @param decimal The decimal value to convert.$decimal must be a decimal integer.
+	* @param minimum The minimum value for the range in which the hexadecimal value is randomly generated.$minimum must be a decimal integer.
+	* @param maximum The maximum value for the range in which the hexadecimal value is randomly generated.$maximum must be a decimal integer larger than $minimum.
+	* @return Returns a hexadecimal value in the range $minimum to $maximum
+	* @see getGuid / uuid()
+	* @see getBin()
+	* @see getOct()
+	*
+	*/
+	public static String getHex ( $minimum , $maximum ) {
+		return hex;
+	}
+
+
+
+
+/**
+	* Prints a tab "\t	" character to the output. Could be used for exporting files to Tab separated value files.
+	*
+	* @return Returns a {TAB} character
+	* @see getNl()
+	* @see get;()
+	*
+	*/
+	public static String getTab () {
+		return tab;
+	}
+
+
+
+
+/**
+	* Prints a new line (<> or \ r \ n) character to the output
+	*
+	* @return Returns a new line character
+	* @see get;()
+	*
+	*/
+	public static String getNl () {
+		return nl;
+	}
+
+
+
+
+/**
+	* Converts a string to upper case characters.
+	*
+	* @param string The input string that will be converted.
+	* @return Returns a string with all characters capitalized
+	* @see getLower()
+	* @see getStrip()
+	* @see getUcfirst()
+	*
+	*/
+	public static String getUpper ( $string ) {
+		return upper;
+	}
+
+
+
+
+/**
+	* Converts a string to lower case characters
+	*
+	* @param string The input string that will be converted.
+	* @return Returns a string with all characters in lower case
+	* @see getStrip()
+	* @see getUcfirst()
+	*
+	*/
+	public static String getLower ( $string ) {
+		return lower;
+	}
+
+
+
+
+/**
+	* The list function returns one random value from a custom list of options.You can specify the items in the list as a comma separated string.
+	*
+	* @param string Minimum one $string item must exist.Multiple items in the list are separated by a comma "," 
+	* @return Returns one random option from the list
+	* @see getIncrement()
+	* @see getRange()
+	*
+	*/
+	public static String getList ( $string1 [, ... , $stringN] ) {
+		return list;
+	}
+
+
+
+
+/**
+	* Returns an artificial number that represents a Belgian company as listed in the Belgian "Kruispuntbank van Ondernemingen".(Ondernemingsnummer also: KBO nummer)Source: <a href="http://economie.fgov.be/nl/ondernemingen/KBO/over/Inschrijving/ON/">economie.fgov.be</a>
+	*
+	* @return Returns a Belgian Company identification number
+	* @see getRrn()
+	*
+	*/
+	public static String getOnn () {
+		return onn;
+	}
+
+
+
+
+/**
+	* Returns a person identification number of a Belgian inhabitant.
+	*
+	* @return Retrurns an artificial Belgian person identification number
+	* @see getSsn()
+	* @see getInsee()
+	*
+	*/
+	public static String getRrn () {
+		return rrn;
+	}
+
+
+
+
+/**
+	* Returns a Universally (or Globally) Unique Identifier (UUID and GUID respectively) as a string. The UUID is version 4 compliant (the random version).In its canonical form, a UUID is represented by 32 hexadecimal digits, displayed in five groups separated by hyphens, in the form <strong>8-4-4-4-12</strong> for a total of 36 characters (32 digits and four hyphens)Sources:<ul><li><a href="http://en.wikipedia.org/wiki/Universally_unique_identifier">http://en.wikipedia.org/wiki/Universally_unique_identifier</a></li><li><a href="http://en.wikipedia.org/wiki/Globally_unique_identifier">http://en.wikipedia.org/wiki/Globally_unique_identifier</a></li></ul>
+	*
+	* @return Returns a globally unique identifier (GUID)
+	*
+	*/
+	public static String getGuid () {
+		return guid / uuid;
+	}
+
+
+
+
+/**
+	* Returns a value that increments by 1 with each iteration.The start parameter can be set as a starting point.This can be used to give unique numbers to for example test cases.
+	*
+	* @param start The initial value to start the incremental value from.$start must be an integer.
+	* @return Returns an incremental value starting at 1.
+	* @see getRange()
+	*
+	*/
+	public static String getIncrement () {
+		return increment;
+	}
+
+
+
+
+/**
+	* Returns a value that increments by 1 with each iteration.The start parameter can be set as a starting point.This can be used to give unique numbers to for example test cases.
+	*
+	* @param start The initial value to start the incremental value from.$start must be an integer.
+	* @return Returns an incremental value starting at $start.
+	* @see getRange()
+	*
+	*/
+	public static String getIncrement ( $start ) {
+		return increment;
+	}
+
+
+
+
+/**
+	* Generates a random byte, a unit of digital information in computing and telecommunications that most commonly consists of eight bits.Source: <a href="http://en.wikipedia.org/wiki/Byte">http://en.wikipedia.org/wiki/Byte</a>To randomly generate bits with other lengths than 8, check the <strong>bin() function</strong>.
+	*
+	* @return Returns a byte (8bits)
+	* @see getBin()
+	*
+	*/
+	public static String getByte () {
+		return byte;
+	}
+
+
+
+
+/**
+	* Returns a random binary value or converts a decimal value to binary depending on the parameters.Binary numeral system, or base-2 numeral system, represents numeric values using two symbols: 0 and 1.Source: <a href="http://en.wikipedia.org/wiki/Binary_numeral_system">http://en.wikipedia.org/wiki/Binary_numeral_system</a>Note: To randomly generate bytes (groups of 8bits with leading zero's), use the <strong>byte() function</strong>.
+	*
+	* @param decimal A decimal integer value
+	* @param minimum The minimum value for the range.
+	* @param maximum The maximum value for the range.
+	* @return converts the $decimal value to binary
+	* @see getOct()
+	*
+	*/
+	public static String getBin ( $decimal ) {
+		return bin;
+	}
+
+
+
+
+/**
+	* Returns a random binary value or converts a decimal value to binary depending on the parameters.Binary numeral system, or base-2 numeral system, represents numeric values using two symbols: 0 and 1.Source: <a href="http://en.wikipedia.org/wiki/Binary_numeral_system">http://en.wikipedia.org/wiki/Binary_numeral_system</a>Note: To randomly generate bytes (groups of 8bits with leading zero's), use the <strong>byte() function</strong>.
+	*
+	* @param decimal A decimal integer value
+	* @param minimum The minimum value for the range.
+	* @param maximum The maximum value for the range.
+	* @return Returns a random binary value in the decimal range minimum to maximum.
+	* @see getOct()
+	*
+	*/
+	public static String getBin ( $minimum , $maximum ) {
+		return bin;
+	}
+
+
+
+
+/**
+	* Generates a number of words that form a sentence, including correct punctuation.As the words are randomly generated, there are not verbs or subjects as traditionally expected and there are no ideas expressed.The sentence always ends in a dot, question mark or exclamation point character.Only standard Latin characters will be returned.
+	*
+	* @param words The number of words in the sencente
+	* @param minumum The minimum number of words in the sentence
+	* @param maximum The maximum number of words in the sentence
+	* @return Returns a fixed number of words including punctuation.
+	* @see getParagraph()
+	*
+	*/
+	public static String getSentence ( $words )  {
+		return sentence;
+	}
+
+
+
+
+/**
+	* Generates a number of words that form a sentence, including correct punctuation.As the words are randomly generated, there are not verbs or subjects as traditionally expected and there are no ideas expressed.The sentence always ends in a dot, question mark or exclamation point character.Only standard Latin characters will be returned.
+	*
+	* @param words The number of words in the sencente
+	* @param minumum The minimum number of words in the sentence
+	* @param maximum The maximum number of words in the sentence
+	* @return Returns a random number of words in the range $minimum to $maximum including punctuation.
+	* @see getParagraph()
+	*
+	*/
+	public static String getSentence ( $minimum , $maximum ) {
+		return sentence;
+	}
+
+
+
+
+/**
+	* Generates a number of sentences with random words that form a paragraph.The number of sentences per paragraph can be set to a fixed value or to a variable range using the parameters.Only standard Latin characters will be returned.With this method, you no longer need to rely on the old Lorem Ipsum text.
+	*
+	* @param sentences the fixed number of sentences to generate in a paragraph
+	* @param minumum the mimimum number of sentences to generate
+	* @param maximum the maximumnumber of sentences to generate
+	* @return Returns a paragraph with 3 to 12 sentences.
+	*
+	*/
+	public static String getParagraph ( )  {
+		return paragraph;
+	}
+
+
+
+
+/**
+	* Generates a number of sentences with random words that form a paragraph.The number of sentences per paragraph can be set to a fixed value or to a variable range using the parameters.Only standard Latin characters will be returned.With this method, you no longer need to rely on the old Lorem Ipsum text.
+	*
+	* @param sentences the fixed number of sentences to generate in a paragraph
+	* @param minumum the mimimum number of sentences to generate
+	* @param maximum the maximumnumber of sentences to generate
+	* @return Returns a fixed number of sentences.
+	*
+	*/
+	public static String getParagraph ( $sentences )  {
+		return paragraph;
+	}
+
+
+
+
+/**
+	* Generates an artificial social security number used in the United States of America) to identify persons.The format is AAA-GG-SSSS as described here: <a href="http://en.wikipedia.org/wiki/Social_Security_number">http://en.wikipedia.org/wiki/Social_Security_number</a>
+	*
+	* @return Returns a random social security number
+	* @see getInsee()
+	* @see getItin()
+	*
+	*/
+	public static String getSsn () {
+		return ssn;
+	}
+
+
+
+
+/**
+	* Generates an artificial basic bank account number that passes  modulo 97 verifications. (Belgian format only for now)
+	*
+	* @return Returns a random belgian bank account number
+	* @see getIban()
+	* @see getBic()
+	* @see getOgm()
+	*
+	*/
+	public static String getBban () {
+		return bban;
+	}
+
+
+
+
+/**
+	* Alphanumeric identification code for persons in France assigned by the "Institut national de la statistique et des études économiques" (INSEE)Source: <a href="http://en.wikipedia.org/wiki/Code_INSEE">http://en.wikipedia.org/wiki/Code_INSEE</a>
+	*
+	* @return Returns a random French person identification number
+	* @see get()
+	*
+	*/
+	public static String getInsee () {
+		return insee;
+	}
+
+
+
+
+/**
+	* Returns a popular given name (also known as first name) for both females and males.Source: <a href="http://en.wikipedia.org/wiki/List_of_most_popular_given_names">http://en.wikipedia.org/wiki/List_of_most_popular_given_names</a>  (European section)
+	*
+	* @return Returns a random international first name
+	* @see getLname()
+	*
+	*/
+	public static String getFname () {
+		return fname;
+	}
+
+
+
+
+/**
+	* Returns a random and popular last name, also know as family name or Surname.Source: <a href="http://en.wikipedia.org/wiki/List_of_most_common_surnames_in_Europe">http://en.wikipedia.org/wiki/List_of_most_common_surnames_in_Europe</a>
+	*
+	* @return Returns a random international last / family name
+	*
+	*/
+	public static String getLname () {
+		return lname;
+	}
+
+
+
+
+/**
+	* This returns one country from the list of ISO_3166-1 countries.The language to output the country name can be specified as a parameter.Supported languages are:<ul><li>EN - English</li><li>NL - Dutch (Nederlands)</li><li>FR - French (Francais)</li><li>ES - Spanish (Espagnol)</li><li>DE - German (Deutsch)</li></ul>
+	*
+	* @param language the output language for the country name
+	* @return Returns a random country name
+	* @see getGps()
+	*
+	*/
+	public static String getCountry ( $language ) {
+		return country;
+	}
+
+
+
+
+/**
+	* International bank account number compliant with ISO13616 national IBAN formats.Source: <a href="">Switft - IBAN Registry (PDF)</a>http://www.swift.com/dsp/resources/documents/IBAN_Registry.pdf
+	*
+	* @return Returns a random international bank account number
+	* @see getBic()
+	* @see getCcn()
+	* @see getItin()
+	* @see getOgm()
+	*
+	*/
+	public static String getIbban () {
+		return iban;
+	}
+
+
+
+
+/**
+	* An artificial international bank identifier code (BIC) also known as SWIFT code.Attention! Bank/Branch Codes and Account Numbers are NOT checked for validity and existence! Only competent bank institutes can officially generate or validate an IBAN.
+	*
+	* @return Returns a random international bank identifier code
+	*
+	*/
+	public static String getBic () {
+		return bic;
+	}
+
+
+
+
+/**
+	* The Strip operation removes all whitespace characters from a string."Whitespace" are characters such as Spaces, Tabs, New LinesSource: <a href="http://en.wikipedia.org/wiki/Whitespace_character">http://en.wikipedia.org/wiki/Whitespace_character</a>
+	*
+	* @param string The string where whitespace needs to be removed from.
+	* @return Returns the input string with all whitspace removed
+	* @see getTruncate()
+	* @see getTrim()
+	*
+	*/
+	public static String getStrip ( $string ) {
+		return strip;
+	}
+
+
+
+
+/**
+	* Truncate returns a portion of a string specified by the length parameter. It is used to limit the maximum length of a string by removing characters beyond the length parameter.."To Truncate" = to shorten it, or cut part of it off.
+	*
+	* @param string The string to be shortened in length
+	* @param length The maximum string length. Characters beyong this position will be removed.
+	* @return Returns part of a string that does not exeed the defined length
+	* @see getTrim()
+	* @see getReverse()
+	* @see getReplace()
+	* @see getLeftpad()
+	* @see getRightpad()
+	*
+	*/
+	public static String getTruncate ( $string , $length ) {
+		return truncate;
+	}
+
+
+
+
+/**
+	* The trim function removes whitespace characters from the start or the end of a string (also known as leading and trailing whitespace characters)."Whitespace characters" are characters such as Spaces, Tabs, New LinesSource: <a href="http://en.wikipedia.org/wiki/Whitespace_character">http://en.wikipedia.org/wiki/Whitespace_character</a>
+	*
+	* @param string The string where whitespace needs to be removed from the start or end position
+	* @return Returns a string without whitespace at the start or end
+	*
+	*/
+	public static String getTrim ( $string ) {
+		return trim;
+	}
+
+
+
+
+/**
+	* Returns a string with the first letter capitalized (in upper case)
+	*
+	* @param string The string to capitalize (make upper case) the first letter
+	* @return Returns a string with the first letter as a capital
+	*
+	*/
+	public static String getUcfirst ( $string ) {
+		return ucfirst;
+	}
+
+
+
+
+/**
+	* The modulo (sometimes called modulus) function finds the remainder of division of one number by another.modulo = a % nGiven two positive numbers, a (the dividend) and n (the divisor), a modulo is the remainder of the Euclidean division of a by n.Source: <a href="http://en.wikipedia.org/wiki/Modulo_operation">http://en.wikipedia.org/wiki/Modulo_operation</a>This modulo calculation is often used as verification for official numbers (banks, persons, companies, etc) in the form of a Modulo 97 verification or calculation.Alias: Both modulo(a,n) and the shorter variant mod(a,n) are allowed.
+	*
+	* @param dividend  the number the will be divided by the divisor
+	* @param divisor the number that divides the dividend
+	* @return Returns the remainder of the division of the dividend by the divisor
+	*
+	*/
+	public static String getModulo ( $dividend , $divisor )  {
+		return modulo;
+	}
+
+
+
+
+/**
+	* Returns a Universally (or Globally) Unique Identifier (UUID and GUID respectively) as a string. The UUID is version 4 compliant (the random version).In its canonical form, a UUID is represented by 32 hexadecimal digits, displayed in five groups separated by hyphens, in the form <strong>8-4-4-4-12</strong> for a total of 36 characters (32 digits and four hyphens)Sources:<ul><li><a href="http://en.wikipedia.org/wiki/Universally_unique_identifier">http://en.wikipedia.org/wiki/Universally_unique_identifier</a></li><li><a href="http://en.wikipedia.org/wiki/Globally_unique_identifier">http://en.wikipedia.org/wiki/Globally_unique_identifier</a></li></ul>
+	*
+	* @return Returns a Universally Unique Identifier (UUID)
+	*
+	*/
+	public static String getUuid () {
+		return guid / uuid;
+	}
+
+
+
+
+/**
+	* The semicolon [;] character is used as separator character when exporting your data to files.<ul><li>For CSV files: The ; character is used to delimit each column (for example in Excel)</li><li>For SQL files: The semi colon is used to delimit columns in the database</li><li>For XML files: The ; character is used to delimit each data node</li><li>For JSON files: The ; character is used to delimit each value in the json array</li></ul>
+	*
+	* @return Returns a semicolon character
+	*
+	*/
+	public static String get; {
+		return ;;
+	}
+
+
+
+
+/**
+	* Returns one random Latin vowel<p<Default is lower case, use the upper() modifier function to return an upper case vowel.Readmore on <a href="http://en.wikipedia.org/wiki/Vowel">vowels</a>.
+	*
+	* @return Returns one random vowel
+	* @see getConsonant()
+	*
+	*/
+	public static String getVowel () {
+		return vowel;
+	}
+
+
+
+
+/**
+	* Returns one random Latin consonant.Default is lower case, use the upper() modifier function to return an upper case consonant.Read more on  <a href="http://en.wikipedia.org/wiki/Consonant">Consonants</a>.
+	*
+	* @return Returns one random consonant
+	*
+	*/
+	public static String getConsonant () {
+		return consonant;
+	}
+
+
+
+
+/**
+	* The range function allows to return an value that increments with each iteration and restarts when a certain limit is reached.When the $maximum range value has been reached the value will start again at $minimum.
+	*
+	* @param minimum the initial start value for the increment value, and the return value when $maximum has been reached
+	* @param maximum the highest value allowed in the range of numbers
+	* @return Returns an incremented value with ech iteration in the range Minimum to Maximum
+	*
+	*/
+	public static String getRange ( $minimum , $maximum )  {
+		return range;
+	}
+
+
+
+
+/**
+	* The GPS function provides you with random latitude and/or longitude values.Source: <a href="http://en.wikipedia.org/wiki/Geographic_coordinate_system">http://en.wikipedia.org/wiki/Geographic_coordinate_system</a>
+	*
+	* @param type Type can be "lat" for latitude or "long" for longtitude values only.
+	* @return Returns a latitude longitude value pair
+	*
+	*/
+	public static String getGps () {
+		return gps;
+	}
+
+
+
+
+/**
+	* The GPS function provides you with random latitude and/or longitude values.Source: <a href="http://en.wikipedia.org/wiki/Geographic_coordinate_system">http://en.wikipedia.org/wiki/Geographic_coordinate_system</a>
+	*
+	* @param type Type can be "lat" for latitude or "long" for longtitude values only.
+	* @return Returns a latitude or longitude value based on the $Type paremeter
+	*
+	*/
+	public static String getGps ( $type )  {
+		return gps;
+	}
+
+
+
+
+/**
+	* This function generates random characters in the ASCII character-encoding scheme originally based on the English alphabet.Only printable ASCII characters will be returned (no control characters).This function is best suited to generate salts, authorisation keys, passwords, etc.ASCII() function behaves similar to the javascript String.fromCharCode() or php's char() function.Source: <a href="http://en.wikipedia.org/wiki/ASCII">Wikipedia: American Standard Code for Information Interchange</a>
+	*
+	* @param decimal The Unicode decimal value to be converted into ASCII
+	* @param minimum The minimum length for the string of characters.
+	* @param maximum The maximum length for the string of characters.
+	* @return Returns one random ASCII character in the range 32 to 126
+	*
+	*/
+	public static String getAscii () {
+		return ascii;
+	}
+
+
+
+
+/**
+	* This function generates random characters in the ASCII character-encoding scheme originally based on the English alphabet.Only printable ASCII characters will be returned (no control characters).This function is best suited to generate salts, authorisation keys, passwords, etc.ASCII() function behaves similar to the javascript String.fromCharCode() or php's char() function.Source: <a href="http://en.wikipedia.org/wiki/ASCII">Wikipedia: American Standard Code for Information Interchange</a>
+	*
+	* @param decimal The Unicode decimal value to be converted into ASCII
+	* @param minimum The minimum length for the string of characters.
+	* @param maximum The maximum length for the string of characters.
+	* @return Returns a string of random ASCII characters with length $length
+	*
+	*/
+	public static String getAscii ( $decimal ) {
+		return ascii;
+	}
+
+
+
+
+/**
+	* This function generates random characters in the ASCII character-encoding scheme originally based on the English alphabet.Only printable ASCII characters will be returned (no control characters).This function is best suited to generate salts, authorisation keys, passwords, etc.ASCII() function behaves similar to the javascript String.fromCharCode() or php's char() function.Source: <a href="http://en.wikipedia.org/wiki/ASCII">Wikipedia: American Standard Code for Information Interchange</a>
+	*
+	* @param decimal The Unicode decimal value to be converted into ASCII
+	* @param minimum The minimum length for the string of characters.
+	* @param maximum The maximum length for the string of characters.
+	* @return Returns a string of ASCII characters with a string length in the range $minimum to $maximum
+	*
+	*/
+	public static String getAscii ( $minimum , $maximum ) {
+		return ascii;
+	}
+
+
+
+
+/**
+	* The octal function generates random base-8 values or converts decimal values to octal values depending on the input parameters.The octal numeral system, or oct for short, is the base-8 number system, and uses the digits 0 to 7. Octal numerals can be made from binary numerals by grouping consecutive binary digits into groups of three (starting from the right).Source: <a href="http://en.wikipedia.org/wiki/Octal">http://en.wikipedia.org/wiki/Octal</a>
+	*
+	* @param decimal The decimal value to be converted to octal
+	* @param minimum The minimum decimal value range.
+	* @param maximum The maximum decimal value range.
+	* @return Returns the octal value for the given decimal
+	*
+	*/
+	public static String getOct ( $decimal )  {
+		return oct;
+	}
+
+
+
+
+/**
+	* The octal function generates random base-8 values or converts decimal values to octal values depending on the input parameters.The octal numeral system, or oct for short, is the base-8 number system, and uses the digits 0 to 7. Octal numerals can be made from binary numerals by grouping consecutive binary digits into groups of three (starting from the right).Source: <a href="http://en.wikipedia.org/wiki/Octal">http://en.wikipedia.org/wiki/Octal</a>
+	*
+	* @param decimal The decimal value to be converted to octal
+	* @param minimum The minimum decimal value range.
+	* @param maximum The maximum decimal value range.
+	* @return Returns random octal values in the decimal range $minimum to $maximum
+	*
+	*/
+	public static String getOct ( $minimum , $maximum )  {
+		return oct;
+	}
+
+
+
+
+/**
+	* The powerfull date function can generate random dates, and times, that can be displayed in any format suitable for your needs.The dates and formating rules are based on the javascript lirary <a href="http://momentjs.com/">Moments.js</a> (check the $format parameter below).* Unix Epoch = is the time 00:00:00 UTC on 1 January 1970
+	*
+	* @param dateString The ISO-8601 string to be converted
+	* @param fromDate The minimum date range to randomly generate dates from.
+	* @param toDate The maximum date range to randomly generate dates to.
+	* @param format &bull; <a href="http://momentjs.com/docs/#/displaying/format/">Moments.js formatting documentation</a><table class="borderTable">    <tr>      <th>Token</th>      <th>Output</th>    </tr>    <tr>      <td>Month</td>      <td></td>    </tr>    <tr>      <td>M</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>Mo</td>      <td>1st 2nd ... 11th 12th</td>    </tr>    <tr>      <td>MM</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>MMM</td>      <td>Jan Feb ... Nov Dec</td>    </tr>    <tr>      <td>MMMM</td>      <td>January February ... November December</td>    </tr>    <tr>      <td>Day of Month</td>      <td></td>    </tr>    <tr>      <td>D</td>      <td>1 2 ... 30 30</td>    </tr>    <tr>      <td>Do</td>      <td>1st 2nd ... 30th 31st</td>    </tr>    <tr>      <td>DD</td>      <td>01 02 ... 30 31</td>    </tr>    <tr>      <td>Day of Year</td>      <td></td>    </tr>    <tr>      <td>DDD</td>      <td>1 2 ... 364 365</td>    </tr>    <tr>      <td>DDDo</td>      <td>1st 2nd ... 364th 365th</td>    </tr>    <tr>      <td>DDDD</td>      <td>001 002 ... 364 365</td>    </tr>    <tr>      <td>Day of Week</td>      <td></td>    </tr>    <tr>      <td>d</td>      <td>0 1 ... 5 6</td>    </tr>    <tr>      <td>do</td>      <td>0th 1st ... 5th 6th</td>    </tr>    <tr>      <td>ddd</td>      <td>Sun Mon ... Fri Sat</td>    </tr>    <tr>      <td>dddd</td>      <td>Sunday Monday ... Friday Saturday</td>    </tr>    <tr>      <td>Week of Year</td>      <td></td>    </tr>    <tr>      <td>w</td>      <td>1 2 ... 52 53</td>    </tr>    <tr>      <td>wo</td>      <td>1st 2nd ... 52nd 53rd</td>    </tr>    <tr>      <td>ww</td>      <td>01 02 ... 52 53</td>    </tr>    <tr>      <td>Year</td>      <td></td>    </tr>    <tr>      <td>YY</td>      <td>70 71 ... 29 30</td>    </tr>    <tr>      <td>YYYY</td>      <td>1970 1971 ... 2029 2030</td>    </tr>    <tr>      <td>AM/PM</td>      <td></td>    </tr>    <tr>      <td>A</td>      <td>AM PM</td>    </tr>    <tr>      <td>a</td>      <td>am pm</td>    </tr>    <tr>      <td>Hour</td>      <td></td>    </tr>    <tr>      <td>H</td>      <td>0 1 ... 22 23</td>    </tr>    <tr>      <td>HH</td>      <td>00 01 ... 22 23</td>    </tr>    <tr>      <td>h</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>hh</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>Minute</td>      <td></td>    </tr>    <tr>      <td>m</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>mm</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Second</td>      <td></td>    </tr>    <tr>      <td>s</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>ss</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Timezone</td>      <td></td>    </tr>    <tr>      <td>z or zz</td>      <td>EST CST ... MST PST</td>    </tr>    <tr>      <td>Z</td>      <td>-07:00 -06:00 ... +06:00 +07:00</td>    </tr>    <tr>      <td>ZZ</td>      <td>-0700 -0600 ... +0600 +0700</td>    </tr>    <tr>      <td>Localized date format</td>      <td></td>    </tr>    <tr>      <td>LT</td>      <td>8:30 PM</td>    </tr>    <tr>      <td>L</td>      <td>07/10/1986</td>    </tr>    <tr>      <td>LL</td>      <td>July 10 1986</td>    </tr>    <tr>      <td>LLL</td>      <td>July 10 1986 8:30 PM</td>    </tr>    <tr>      <td>LLLL</td>      <td>Saturday, July 10 1986 8:30 PM</td>    </tr></table>
+	* @return Returns a random date between the Unix Epoch and Now in the ISO-8601 format "YYYY-MM-DD"
+	* @see getDatetime()
+	* @see getTime()
+	*
+	*/
+	public static String getDate () {
+		return date;
+	}
+
+
+
+
+/**
+	* The powerfull date function can generate random dates, and times, that can be displayed in any format suitable for your needs.The dates and formating rules are based on the javascript lirary <a href="http://momentjs.com/">Moments.js</a> (check the $format parameter below).* Unix Epoch = is the time 00:00:00 UTC on 1 January 1970
+	*
+	* @param dateString The ISO-8601 string to be converted
+	* @param fromDate The minimum date range to randomly generate dates from.
+	* @param toDate The maximum date range to randomly generate dates to.
+	* @param format &bull; <a href="http://momentjs.com/docs/#/displaying/format/">Moments.js formatting documentation</a><table class="borderTable">    <tr>      <th>Token</th>      <th>Output</th>    </tr>    <tr>      <td>Month</td>      <td></td>    </tr>    <tr>      <td>M</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>Mo</td>      <td>1st 2nd ... 11th 12th</td>    </tr>    <tr>      <td>MM</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>MMM</td>      <td>Jan Feb ... Nov Dec</td>    </tr>    <tr>      <td>MMMM</td>      <td>January February ... November December</td>    </tr>    <tr>      <td>Day of Month</td>      <td></td>    </tr>    <tr>      <td>D</td>      <td>1 2 ... 30 30</td>    </tr>    <tr>      <td>Do</td>      <td>1st 2nd ... 30th 31st</td>    </tr>    <tr>      <td>DD</td>      <td>01 02 ... 30 31</td>    </tr>    <tr>      <td>Day of Year</td>      <td></td>    </tr>    <tr>      <td>DDD</td>      <td>1 2 ... 364 365</td>    </tr>    <tr>      <td>DDDo</td>      <td>1st 2nd ... 364th 365th</td>    </tr>    <tr>      <td>DDDD</td>      <td>001 002 ... 364 365</td>    </tr>    <tr>      <td>Day of Week</td>      <td></td>    </tr>    <tr>      <td>d</td>      <td>0 1 ... 5 6</td>    </tr>    <tr>      <td>do</td>      <td>0th 1st ... 5th 6th</td>    </tr>    <tr>      <td>ddd</td>      <td>Sun Mon ... Fri Sat</td>    </tr>    <tr>      <td>dddd</td>      <td>Sunday Monday ... Friday Saturday</td>    </tr>    <tr>      <td>Week of Year</td>      <td></td>    </tr>    <tr>      <td>w</td>      <td>1 2 ... 52 53</td>    </tr>    <tr>      <td>wo</td>      <td>1st 2nd ... 52nd 53rd</td>    </tr>    <tr>      <td>ww</td>      <td>01 02 ... 52 53</td>    </tr>    <tr>      <td>Year</td>      <td></td>    </tr>    <tr>      <td>YY</td>      <td>70 71 ... 29 30</td>    </tr>    <tr>      <td>YYYY</td>      <td>1970 1971 ... 2029 2030</td>    </tr>    <tr>      <td>AM/PM</td>      <td></td>    </tr>    <tr>      <td>A</td>      <td>AM PM</td>    </tr>    <tr>      <td>a</td>      <td>am pm</td>    </tr>    <tr>      <td>Hour</td>      <td></td>    </tr>    <tr>      <td>H</td>      <td>0 1 ... 22 23</td>    </tr>    <tr>      <td>HH</td>      <td>00 01 ... 22 23</td>    </tr>    <tr>      <td>h</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>hh</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>Minute</td>      <td></td>    </tr>    <tr>      <td>m</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>mm</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Second</td>      <td></td>    </tr>    <tr>      <td>s</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>ss</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Timezone</td>      <td></td>    </tr>    <tr>      <td>z or zz</td>      <td>EST CST ... MST PST</td>    </tr>    <tr>      <td>Z</td>      <td>-07:00 -06:00 ... +06:00 +07:00</td>    </tr>    <tr>      <td>ZZ</td>      <td>-0700 -0600 ... +0600 +0700</td>    </tr>    <tr>      <td>Localized date format</td>      <td></td>    </tr>    <tr>      <td>LT</td>      <td>8:30 PM</td>    </tr>    <tr>      <td>L</td>      <td>07/10/1986</td>    </tr>    <tr>      <td>LL</td>      <td>July 10 1986</td>    </tr>    <tr>      <td>LLL</td>      <td>July 10 1986 8:30 PM</td>    </tr>    <tr>      <td>LLLL</td>      <td>Saturday, July 10 1986 8:30 PM</td>    </tr></table>
+	* @return Returns a random date in the $format you provide (range is: Unix Epoch untill $now)
+	* @see getDatetime()
+	* @see getTime()
+	*
+	*/
+	public static String getDate ( $format ) {
+		return date;
+	}
+
+
+
+
+/**
+	* The powerfull date function can generate random dates, and times, that can be displayed in any format suitable for your needs.The dates and formating rules are based on the javascript lirary <a href="http://momentjs.com/">Moments.js</a> (check the $format parameter below).* Unix Epoch = is the time 00:00:00 UTC on 1 January 1970
+	*
+	* @param dateString The ISO-8601 string to be converted
+	* @param fromDate The minimum date range to randomly generate dates from.
+	* @param toDate The maximum date range to randomly generate dates to.
+	* @param format &bull; <a href="http://momentjs.com/docs/#/displaying/format/">Moments.js formatting documentation</a><table class="borderTable">    <tr>      <th>Token</th>      <th>Output</th>    </tr>    <tr>      <td>Month</td>      <td></td>    </tr>    <tr>      <td>M</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>Mo</td>      <td>1st 2nd ... 11th 12th</td>    </tr>    <tr>      <td>MM</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>MMM</td>      <td>Jan Feb ... Nov Dec</td>    </tr>    <tr>      <td>MMMM</td>      <td>January February ... November December</td>    </tr>    <tr>      <td>Day of Month</td>      <td></td>    </tr>    <tr>      <td>D</td>      <td>1 2 ... 30 30</td>    </tr>    <tr>      <td>Do</td>      <td>1st 2nd ... 30th 31st</td>    </tr>    <tr>      <td>DD</td>      <td>01 02 ... 30 31</td>    </tr>    <tr>      <td>Day of Year</td>      <td></td>    </tr>    <tr>      <td>DDD</td>      <td>1 2 ... 364 365</td>    </tr>    <tr>      <td>DDDo</td>      <td>1st 2nd ... 364th 365th</td>    </tr>    <tr>      <td>DDDD</td>      <td>001 002 ... 364 365</td>    </tr>    <tr>      <td>Day of Week</td>      <td></td>    </tr>    <tr>      <td>d</td>      <td>0 1 ... 5 6</td>    </tr>    <tr>      <td>do</td>      <td>0th 1st ... 5th 6th</td>    </tr>    <tr>      <td>ddd</td>      <td>Sun Mon ... Fri Sat</td>    </tr>    <tr>      <td>dddd</td>      <td>Sunday Monday ... Friday Saturday</td>    </tr>    <tr>      <td>Week of Year</td>      <td></td>    </tr>    <tr>      <td>w</td>      <td>1 2 ... 52 53</td>    </tr>    <tr>      <td>wo</td>      <td>1st 2nd ... 52nd 53rd</td>    </tr>    <tr>      <td>ww</td>      <td>01 02 ... 52 53</td>    </tr>    <tr>      <td>Year</td>      <td></td>    </tr>    <tr>      <td>YY</td>      <td>70 71 ... 29 30</td>    </tr>    <tr>      <td>YYYY</td>      <td>1970 1971 ... 2029 2030</td>    </tr>    <tr>      <td>AM/PM</td>      <td></td>    </tr>    <tr>      <td>A</td>      <td>AM PM</td>    </tr>    <tr>      <td>a</td>      <td>am pm</td>    </tr>    <tr>      <td>Hour</td>      <td></td>    </tr>    <tr>      <td>H</td>      <td>0 1 ... 22 23</td>    </tr>    <tr>      <td>HH</td>      <td>00 01 ... 22 23</td>    </tr>    <tr>      <td>h</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>hh</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>Minute</td>      <td></td>    </tr>    <tr>      <td>m</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>mm</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Second</td>      <td></td>    </tr>    <tr>      <td>s</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>ss</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Timezone</td>      <td></td>    </tr>    <tr>      <td>z or zz</td>      <td>EST CST ... MST PST</td>    </tr>    <tr>      <td>Z</td>      <td>-07:00 -06:00 ... +06:00 +07:00</td>    </tr>    <tr>      <td>ZZ</td>      <td>-0700 -0600 ... +0600 +0700</td>    </tr>    <tr>      <td>Localized date format</td>      <td></td>    </tr>    <tr>      <td>LT</td>      <td>8:30 PM</td>    </tr>    <tr>      <td>L</td>      <td>07/10/1986</td>    </tr>    <tr>      <td>LL</td>      <td>July 10 1986</td>    </tr>    <tr>      <td>LLL</td>      <td>July 10 1986 8:30 PM</td>    </tr>    <tr>      <td>LLLL</td>      <td>Saturday, July 10 1986 8:30 PM</td>    </tr></table>
+	* @return Converts the $dateString to the $format you provide.
+	* @see getDatetime()
+	* @see getTime()
+	*
+	*/
+	public static String getDate ( $format , $dateString ) {
+		return date;
+	}
+
+
+
+
+/**
+	* The powerfull date function can generate random dates, and times, that can be displayed in any format suitable for your needs.The dates and formating rules are based on the javascript lirary <a href="http://momentjs.com/">Moments.js</a> (check the $format parameter below).* Unix Epoch = is the time 00:00:00 UTC on 1 January 1970
+	*
+	* @param dateString The ISO-8601 string to be converted
+	* @param fromDate The minimum date range to randomly generate dates from.
+	* @param toDate The maximum date range to randomly generate dates to.
+	* @param format &bull; <a href="http://momentjs.com/docs/#/displaying/format/">Moments.js formatting documentation</a><table class="borderTable">    <tr>      <th>Token</th>      <th>Output</th>    </tr>    <tr>      <td>Month</td>      <td></td>    </tr>    <tr>      <td>M</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>Mo</td>      <td>1st 2nd ... 11th 12th</td>    </tr>    <tr>      <td>MM</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>MMM</td>      <td>Jan Feb ... Nov Dec</td>    </tr>    <tr>      <td>MMMM</td>      <td>January February ... November December</td>    </tr>    <tr>      <td>Day of Month</td>      <td></td>    </tr>    <tr>      <td>D</td>      <td>1 2 ... 30 30</td>    </tr>    <tr>      <td>Do</td>      <td>1st 2nd ... 30th 31st</td>    </tr>    <tr>      <td>DD</td>      <td>01 02 ... 30 31</td>    </tr>    <tr>      <td>Day of Year</td>      <td></td>    </tr>    <tr>      <td>DDD</td>      <td>1 2 ... 364 365</td>    </tr>    <tr>      <td>DDDo</td>      <td>1st 2nd ... 364th 365th</td>    </tr>    <tr>      <td>DDDD</td>      <td>001 002 ... 364 365</td>    </tr>    <tr>      <td>Day of Week</td>      <td></td>    </tr>    <tr>      <td>d</td>      <td>0 1 ... 5 6</td>    </tr>    <tr>      <td>do</td>      <td>0th 1st ... 5th 6th</td>    </tr>    <tr>      <td>ddd</td>      <td>Sun Mon ... Fri Sat</td>    </tr>    <tr>      <td>dddd</td>      <td>Sunday Monday ... Friday Saturday</td>    </tr>    <tr>      <td>Week of Year</td>      <td></td>    </tr>    <tr>      <td>w</td>      <td>1 2 ... 52 53</td>    </tr>    <tr>      <td>wo</td>      <td>1st 2nd ... 52nd 53rd</td>    </tr>    <tr>      <td>ww</td>      <td>01 02 ... 52 53</td>    </tr>    <tr>      <td>Year</td>      <td></td>    </tr>    <tr>      <td>YY</td>      <td>70 71 ... 29 30</td>    </tr>    <tr>      <td>YYYY</td>      <td>1970 1971 ... 2029 2030</td>    </tr>    <tr>      <td>AM/PM</td>      <td></td>    </tr>    <tr>      <td>A</td>      <td>AM PM</td>    </tr>    <tr>      <td>a</td>      <td>am pm</td>    </tr>    <tr>      <td>Hour</td>      <td></td>    </tr>    <tr>      <td>H</td>      <td>0 1 ... 22 23</td>    </tr>    <tr>      <td>HH</td>      <td>00 01 ... 22 23</td>    </tr>    <tr>      <td>h</td>      <td>1 2 ... 11 12</td>    </tr>    <tr>      <td>hh</td>      <td>01 02 ... 11 12</td>    </tr>    <tr>      <td>Minute</td>      <td></td>    </tr>    <tr>      <td>m</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>mm</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Second</td>      <td></td>    </tr>    <tr>      <td>s</td>      <td>0 1 ... 58 59</td>    </tr>    <tr>      <td>ss</td>      <td>00 01 ... 58 59</td>    </tr>    <tr>      <td>Timezone</td>      <td></td>    </tr>    <tr>      <td>z or zz</td>      <td>EST CST ... MST PST</td>    </tr>    <tr>      <td>Z</td>      <td>-07:00 -06:00 ... +06:00 +07:00</td>    </tr>    <tr>      <td>ZZ</td>      <td>-0700 -0600 ... +0600 +0700</td>    </tr>    <tr>      <td>Localized date format</td>      <td></td>    </tr>    <tr>      <td>LT</td>      <td>8:30 PM</td>    </tr>    <tr>      <td>L</td>      <td>07/10/1986</td>    </tr>    <tr>      <td>LL</td>      <td>July 10 1986</td>    </tr>    <tr>      <td>LLL</td>      <td>July 10 1986 8:30 PM</td>    </tr>    <tr>      <td>LLLL</td>      <td>Saturday, July 10 1986 8:30 PM</td>    </tr></table>
+	* @return Returns a random date in the range from $fromData to $toDate in the $format provided
+	* @see getDatetime()
+	* @see getTime()
+	*
+	*/
+	public static String getDate ( $format , $fromDate , $toDate ) {
+		return date;
+	}
+
+
+
+
+/**
+	* Returns the current date and time.For more date and time options check the more robust date() function.
+	*
+	* @return returns the current date and time in an ISO-8601 string
+	* @see getTime()
+	*
+	*/
+	public static String getDatetime () {
+		return datetime;
+	}
+
+
+
+
+/**
+	* Returns the current time (hours, minutes and seconds).For more date and time options check the more robust date() function.
+	*
+	* @return Returns the current time in a 24 hour format
+	*
+	*/
+	public static String getTime () {
+		return time;
+	}
+
+
+
+
+/**
+	* This function generates credit card numbers that pass the Luhn check (also known as MOD10).Types of numbers generated:<ul><li>Visa</li><li>Mastercard</li><li>American Express</li><li>Discover</li><li>Diners Club</li><li>En Route</li><li>JCB</li><li>Voyager</li></ul>
+	*
+	* @return Returns a random but valid credit card number
+	*
+	*/
+	public static String getCcn () {
+		return ccn;
+	}
+
+
+
+
+/**
+	* The itin() function generates artificial Individual Taxpayer Identification Numbers use in the United States of America (US).<br />The itin number is a tax processing number issued by the Internal Revenue Service(IRS).Source: <a href="http://en.wikipedia.org/wiki/Individual_Taxpayer_Identification_Number">http://en.wikipedia.org/wiki/Individual_Taxpayer_Identification_Number</a>
+	*
+	* @return Returns a US Individual Taxpayer Identification Number
+	*
+	*/
+	public static String getItin () {
+		return itin;
+	}
+
+
+
+
+/**
+	* This modifier function reverses the sequence of characters in a string.
+	*
+	* @param string The string to be reversed
+	* @return Returns the input string with its characters in a reverse order
+	* @see getReplace()
+	*
+	*/
+	public static String getReverse ( $string ) {
+		return reverse;
+	}
+
+
+
+
+/**
+	* The Unicode function returns all types of character for multiple languages (also UTF-8).Unicode contains special languages and graphical characters not commonly used in standard Latin texts.Unicode characters are perfect to test input fields in your application and verify how texts are stored in the database. If you want to upset your DBA use the pattern below to generate random characters from the "Unified Canadian Aboriginal Syllabics" unicode range :)<div class="code">unicode(60,24) - will generate 60 characters from range 24 (Unified Canadian Aboriginal Syllabics)</div>If you want to copy &amp; paste these characters to another program, make sure the target application is UTF-8 encoded.Unicode / UTF-8 ranges & references:<ul>	<li><a href="http://www.utf8-chartable.de/unicode-utf8-table.pl">http://www.utf8-chartable.de/unicode-utf8-table.pl</a></li>	<li><a href="http://jrgraphix.net/r/Unicode/0020-007F">http://jrgraphix.net/r/Unicode/0020-007F</a></li><li><a href="http://nl.wikipedia.org/wiki/Unicode">http://nl.wikipedia.org/wiki/Unicode</a></li></ul>
+	*
+	* @param length The length of the string to generate
+	* @param rangeMin The minimum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param rangeMax The maximum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param range The predefined range that the generator engine uses to pick characters from.These are the supported pre-defined ranges:<table><tr><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>0</td><td>Latin</td></tr>	<tr><td>1</td><td>Latin-1 Supplement</td></tr>	<tr><td>2</td><td>Latin-Extended A</td></tr>	<tr><td>3</td><td>Latin-Extended B</td></tr>	<tr><td>4</td><td>IPA Extentions</td></tr>	<tr><td>5</td><td>Greek and Coptic</td></tr>	<tr><td>6</td><td>Cyrillic</td></tr>	<tr><td>7</td><td>Cyrillic Supplementary</td></tr>	<tr><td>8</td><td>Armenian</td></tr>	<tr><td>9</td><td>Hebrew</td></tr>	<tr><td>10</td><td>Arabic</td></tr>	<tr><td>11</td><td>Syriac</td></tr>	<tr><td>12</td><td>Thaana</td></tr>	<tr><td>13</td><td>Devanagari</td></tr>	<tr><td>14</td><td>Bengali</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>15</td><td>Gurmukhi</td></tr>	<tr><td>16</td><td>Gujarati</td></tr>	<tr><td>17</td><td>Oriya</td></tr>	<tr><td>18</td><td>Tamil</td></tr>	<tr><td>19</td><td>Malayalam</td></tr>	<tr><td>20</td><td>Thai</td></tr>	<tr><td>21</td><td>Georgian</td></tr>	<tr><td>22</td><td>Hangul Jamo</td></tr>	<tr><td>23</td><td>Ethiopic</td></tr>	<tr><td>24</td><td>Cherokee</td></tr>	<tr><td>25</td><td>Unified Canadian Aboriginal Syllabics</td></tr>	<tr><td>26</td><td>Khmer</td></tr>	<tr><td>27</td><td>Khmer Symbols</td></tr>	<tr><td>28</td><td>Mongolian</td></tr>	<tr><td>29</td><td>Phonetic Extensions</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>30</td><td>Latin Extended Additional</td></tr>	<tr><td>31</td><td>Currency Symbols</td></tr>	<tr><td>32</td><td>Letterlike Symbols</td></tr>	<tr><td>33</td><td>Number Forms</td></tr>	<tr><td>34</td><td>Arrows</td></tr>	<tr><td>35</td><td>Mathematical Operators</td></tr>	<tr><td>36</td><td>Enclosed Alphanumerics</td></tr>	<tr><td>37</td><td>Box Drawing</td></tr>	<tr><td>38</td><td>Geometric Shapes</td></tr>	<tr><td>39</td><td>Miscellaneous Symbols</td></tr>	<tr><td>40</td><td>Supplemental Arrows-B</td></tr>	<tr><td>41</td><td>Kangxi Radicals</td></tr>	<tr><td>42</td><td>CJK Symbols and Punctuation</td></tr>	<tr><td>43</td><td>Hiragana</td></tr>	<tr><td>44</td><td>Katakana</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>45</td><td>Bopomofo</td></tr>	<tr><td>46</td><td>Hangul Compatibility Jamo</td></tr>	<tr><td>47</td><td>Enclosed CJK Letters and Months</td></tr>	<tr><td>48</td><td>CJK Compatibility</td></tr>	<tr><td>49</td><td>CJK Unified Ideographs Extension A</td></tr>	<tr><td>50</td><td>CJK Unified Ideographs</td></tr>	<tr><td>51</td><td>Yi Syllables</td></tr>	<tr><td>52</td><td>Yi Radicals</td></tr>	<tr><td>53</td><td>Hangul Syllables</td></tr>	<tr><td>54</td><td>CJK Compatibility Ideographs</td></tr>	<tr><td>55</td><td>Arabic Presentation Forms-A</td></tr>	<tr><td>56</td><td>CJK Compatibility Forms</td></tr>	<tr><td>57</td><td>Arabic Presentation Forms-B</td></tr>	<tr><td>58</td><td>Mathematical Alphanumeric Symbols</td></tr>	<tr><td>59</td><td>CJK Unified Ideographs Extension B</td></tr>	</table></td></tr></table>
+	* @return Returns a string of Unicode characters with a length of $length.
+	* @see getAscii()
+	*
+	*/
+	public static String getUnicode ( $length ) {
+		return unicode;
+	}
+
+
+
+
+/**
+	* The Unicode function returns all types of character for multiple languages (also UTF-8).Unicode contains special languages and graphical characters not commonly used in standard Latin texts.Unicode characters are perfect to test input fields in your application and verify how texts are stored in the database. If you want to upset your DBA use the pattern below to generate random characters from the "Unified Canadian Aboriginal Syllabics" unicode range :)<div class="code">unicode(60,24) - will generate 60 characters from range 24 (Unified Canadian Aboriginal Syllabics)</div>If you want to copy &amp; paste these characters to another program, make sure the target application is UTF-8 encoded.Unicode / UTF-8 ranges & references:<ul>	<li><a href="http://www.utf8-chartable.de/unicode-utf8-table.pl">http://www.utf8-chartable.de/unicode-utf8-table.pl</a></li>	<li><a href="http://jrgraphix.net/r/Unicode/0020-007F">http://jrgraphix.net/r/Unicode/0020-007F</a></li><li><a href="http://nl.wikipedia.org/wiki/Unicode">http://nl.wikipedia.org/wiki/Unicode</a></li></ul>
+	*
+	* @param length The length of the string to generate
+	* @param rangeMin The minimum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param rangeMax The maximum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param range The predefined range that the generator engine uses to pick characters from.These are the supported pre-defined ranges:<table><tr><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>0</td><td>Latin</td></tr>	<tr><td>1</td><td>Latin-1 Supplement</td></tr>	<tr><td>2</td><td>Latin-Extended A</td></tr>	<tr><td>3</td><td>Latin-Extended B</td></tr>	<tr><td>4</td><td>IPA Extentions</td></tr>	<tr><td>5</td><td>Greek and Coptic</td></tr>	<tr><td>6</td><td>Cyrillic</td></tr>	<tr><td>7</td><td>Cyrillic Supplementary</td></tr>	<tr><td>8</td><td>Armenian</td></tr>	<tr><td>9</td><td>Hebrew</td></tr>	<tr><td>10</td><td>Arabic</td></tr>	<tr><td>11</td><td>Syriac</td></tr>	<tr><td>12</td><td>Thaana</td></tr>	<tr><td>13</td><td>Devanagari</td></tr>	<tr><td>14</td><td>Bengali</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>15</td><td>Gurmukhi</td></tr>	<tr><td>16</td><td>Gujarati</td></tr>	<tr><td>17</td><td>Oriya</td></tr>	<tr><td>18</td><td>Tamil</td></tr>	<tr><td>19</td><td>Malayalam</td></tr>	<tr><td>20</td><td>Thai</td></tr>	<tr><td>21</td><td>Georgian</td></tr>	<tr><td>22</td><td>Hangul Jamo</td></tr>	<tr><td>23</td><td>Ethiopic</td></tr>	<tr><td>24</td><td>Cherokee</td></tr>	<tr><td>25</td><td>Unified Canadian Aboriginal Syllabics</td></tr>	<tr><td>26</td><td>Khmer</td></tr>	<tr><td>27</td><td>Khmer Symbols</td></tr>	<tr><td>28</td><td>Mongolian</td></tr>	<tr><td>29</td><td>Phonetic Extensions</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>30</td><td>Latin Extended Additional</td></tr>	<tr><td>31</td><td>Currency Symbols</td></tr>	<tr><td>32</td><td>Letterlike Symbols</td></tr>	<tr><td>33</td><td>Number Forms</td></tr>	<tr><td>34</td><td>Arrows</td></tr>	<tr><td>35</td><td>Mathematical Operators</td></tr>	<tr><td>36</td><td>Enclosed Alphanumerics</td></tr>	<tr><td>37</td><td>Box Drawing</td></tr>	<tr><td>38</td><td>Geometric Shapes</td></tr>	<tr><td>39</td><td>Miscellaneous Symbols</td></tr>	<tr><td>40</td><td>Supplemental Arrows-B</td></tr>	<tr><td>41</td><td>Kangxi Radicals</td></tr>	<tr><td>42</td><td>CJK Symbols and Punctuation</td></tr>	<tr><td>43</td><td>Hiragana</td></tr>	<tr><td>44</td><td>Katakana</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>45</td><td>Bopomofo</td></tr>	<tr><td>46</td><td>Hangul Compatibility Jamo</td></tr>	<tr><td>47</td><td>Enclosed CJK Letters and Months</td></tr>	<tr><td>48</td><td>CJK Compatibility</td></tr>	<tr><td>49</td><td>CJK Unified Ideographs Extension A</td></tr>	<tr><td>50</td><td>CJK Unified Ideographs</td></tr>	<tr><td>51</td><td>Yi Syllables</td></tr>	<tr><td>52</td><td>Yi Radicals</td></tr>	<tr><td>53</td><td>Hangul Syllables</td></tr>	<tr><td>54</td><td>CJK Compatibility Ideographs</td></tr>	<tr><td>55</td><td>Arabic Presentation Forms-A</td></tr>	<tr><td>56</td><td>CJK Compatibility Forms</td></tr>	<tr><td>57</td><td>Arabic Presentation Forms-B</td></tr>	<tr><td>58</td><td>Mathematical Alphanumeric Symbols</td></tr>	<tr><td>59</td><td>CJK Unified Ideographs Extension B</td></tr>	</table></td></tr></table>
+	* @return Returns a string of unicode character with length $length in the unicode range $rangeMin to $rangeMax
+	* @see getAscii()
+	*
+	*/
+	public static String getUnicode ( $length , $rangeMin, $rangeMax ) {
+		return unicode;
+	}
+
+
+
+
+/**
+	* The Unicode function returns all types of character for multiple languages (also UTF-8).Unicode contains special languages and graphical characters not commonly used in standard Latin texts.Unicode characters are perfect to test input fields in your application and verify how texts are stored in the database. If you want to upset your DBA use the pattern below to generate random characters from the "Unified Canadian Aboriginal Syllabics" unicode range :)<div class="code">unicode(60,24) - will generate 60 characters from range 24 (Unified Canadian Aboriginal Syllabics)</div>If you want to copy &amp; paste these characters to another program, make sure the target application is UTF-8 encoded.Unicode / UTF-8 ranges & references:<ul>	<li><a href="http://www.utf8-chartable.de/unicode-utf8-table.pl">http://www.utf8-chartable.de/unicode-utf8-table.pl</a></li>	<li><a href="http://jrgraphix.net/r/Unicode/0020-007F">http://jrgraphix.net/r/Unicode/0020-007F</a></li><li><a href="http://nl.wikipedia.org/wiki/Unicode">http://nl.wikipedia.org/wiki/Unicode</a></li></ul>
+	*
+	* @param length The length of the string to generate
+	* @param rangeMin The minimum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param rangeMax The maximum (decimal) range for the unicode character (<a href="http://www.utf8-chartable.de/unicode-utf8-table.pl" rel="nollow">Unicode Table</a>)
+	* @param range The predefined range that the generator engine uses to pick characters from.These are the supported pre-defined ranges:<table><tr><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>0</td><td>Latin</td></tr>	<tr><td>1</td><td>Latin-1 Supplement</td></tr>	<tr><td>2</td><td>Latin-Extended A</td></tr>	<tr><td>3</td><td>Latin-Extended B</td></tr>	<tr><td>4</td><td>IPA Extentions</td></tr>	<tr><td>5</td><td>Greek and Coptic</td></tr>	<tr><td>6</td><td>Cyrillic</td></tr>	<tr><td>7</td><td>Cyrillic Supplementary</td></tr>	<tr><td>8</td><td>Armenian</td></tr>	<tr><td>9</td><td>Hebrew</td></tr>	<tr><td>10</td><td>Arabic</td></tr>	<tr><td>11</td><td>Syriac</td></tr>	<tr><td>12</td><td>Thaana</td></tr>	<tr><td>13</td><td>Devanagari</td></tr>	<tr><td>14</td><td>Bengali</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>15</td><td>Gurmukhi</td></tr>	<tr><td>16</td><td>Gujarati</td></tr>	<tr><td>17</td><td>Oriya</td></tr>	<tr><td>18</td><td>Tamil</td></tr>	<tr><td>19</td><td>Malayalam</td></tr>	<tr><td>20</td><td>Thai</td></tr>	<tr><td>21</td><td>Georgian</td></tr>	<tr><td>22</td><td>Hangul Jamo</td></tr>	<tr><td>23</td><td>Ethiopic</td></tr>	<tr><td>24</td><td>Cherokee</td></tr>	<tr><td>25</td><td>Unified Canadian Aboriginal Syllabics</td></tr>	<tr><td>26</td><td>Khmer</td></tr>	<tr><td>27</td><td>Khmer Symbols</td></tr>	<tr><td>28</td><td>Mongolian</td></tr>	<tr><td>29</td><td>Phonetic Extensions</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>30</td><td>Latin Extended Additional</td></tr>	<tr><td>31</td><td>Currency Symbols</td></tr>	<tr><td>32</td><td>Letterlike Symbols</td></tr>	<tr><td>33</td><td>Number Forms</td></tr>	<tr><td>34</td><td>Arrows</td></tr>	<tr><td>35</td><td>Mathematical Operators</td></tr>	<tr><td>36</td><td>Enclosed Alphanumerics</td></tr>	<tr><td>37</td><td>Box Drawing</td></tr>	<tr><td>38</td><td>Geometric Shapes</td></tr>	<tr><td>39</td><td>Miscellaneous Symbols</td></tr>	<tr><td>40</td><td>Supplemental Arrows-B</td></tr>	<tr><td>41</td><td>Kangxi Radicals</td></tr>	<tr><td>42</td><td>CJK Symbols and Punctuation</td></tr>	<tr><td>43</td><td>Hiragana</td></tr>	<tr><td>44</td><td>Katakana</td></tr>	</table></td><td>	<table class="borderTable">	<tr><th>#</th><th>Range</th></tr>	<tr><td>45</td><td>Bopomofo</td></tr>	<tr><td>46</td><td>Hangul Compatibility Jamo</td></tr>	<tr><td>47</td><td>Enclosed CJK Letters and Months</td></tr>	<tr><td>48</td><td>CJK Compatibility</td></tr>	<tr><td>49</td><td>CJK Unified Ideographs Extension A</td></tr>	<tr><td>50</td><td>CJK Unified Ideographs</td></tr>	<tr><td>51</td><td>Yi Syllables</td></tr>	<tr><td>52</td><td>Yi Radicals</td></tr>	<tr><td>53</td><td>Hangul Syllables</td></tr>	<tr><td>54</td><td>CJK Compatibility Ideographs</td></tr>	<tr><td>55</td><td>Arabic Presentation Forms-A</td></tr>	<tr><td>56</td><td>CJK Compatibility Forms</td></tr>	<tr><td>57</td><td>Arabic Presentation Forms-B</td></tr>	<tr><td>58</td><td>Mathematical Alphanumeric Symbols</td></tr>	<tr><td>59</td><td>CJK Unified Ideographs Extension B</td></tr>	</table></td></tr></table>
+	* @return Returns a string of unicode character with length $length in the unicode range $range
+	* @see getAscii()
+	*
+	*/
+	public static String getUnicode ( $length , $range ) {
+		return unicode;
+	}
+
+
+
+
+/**
+	* The replace function substitutes a part of a string with another.The replace function is greedy and processes all occurances of the text to be replaced (A regular expression with the Global flag is used).The function behaves like the php function str_replace($find, $replace, $subject)
+	*
+	* @param search The string to be replaced. (currently there are some issues with regex reserver characters)
+	* @param replace The target string that will be substituting all $search strings
+	* @param subject The target string to process and replace values in
+	* @return Returns the $subject string with all occurances of $search replaced by the string $replace
+	* @see getLeftpad()
+	* @see getRightpad()
+	*
+	*/
+	public static String getReplace ( $search , $replace , $subject ) {
+		return replace;
+	}
+
+
+
+
+/**
+	* Returns a string with random alphabetical lower case characters.For readability, the string returned will always start with a consonant and will be interspersed with a vowel.Note: Only standard Latin characters are returned.
+	*
+	* @param length the fixed length of the output string
+	* @param minimum the minimum length of the output string
+	* @param maximum the maximum length of the output string
+	* @return Returns a string with 2 to 9 random characters
+	* @see getSentence()
+	* @see getParagraph()
+	* @see getVowel()
+	* @see getConsonant()
+	* @see getAscii()
+	*
+	*/
+	public static String getString ( ) {
+		return string;
+	}
+
+
+
+
+/**
+	* Generates a number of words that form a sentence, including correct punctuation.As the words are randomly generated, there are not verbs or subjects as traditionally expected and there are no ideas expressed.The sentence always ends in a dot, question mark or exclamation point character.Only standard Latin characters will be returned.
+	*
+	* @param words The number of words in the sencente
+	* @param minumum The minimum number of words in the sentence
+	* @param maximum The maximum number of words in the sentence
+	* @return Returns a sentence with 3 to 12 words
+	* @see getParagraph()
+	*
+	*/
+	public static String getSentence ( ) {
+		return sentence;
+	}
+
+
+
+
+/**
+	* The Global Trade Item Number (GTIN) comes from the family of GS1 codes and is used for tracking trade items using barcodes. Each item receives its unique GTIN number.This function allows you to generate random random GTIN codes or partly random codes for specific manufacturers and items depending on the input parameters.The legacy names for a GTIN are:<ul><li>EAN - European (International) Article Number</li><li>UCC - Uniform Code Council</li><li>UPC - Universal Product Code (North American, since 1970)</li><li>CIP - Catalogue Item. Publication</li><li>JAN - Japanese Article Number</li><li>SSCC - Serial Shipping Container Code (this is a variant of the GTIN number</li></ul>More information on <a href="http://www.gtin.info/">GTIN</a>.<a href="http://www.gs1.org/">GS1</a>: International not-for-profit association dedicated to the development and implementation of global specifications and solutions to improve the efficiency and visibility of supply and demand chains globally and across multiple sectors.
+	*
+	* @param type The type of GTIN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the GTIN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random GTIN-13 (EAN) number
+	* @see getEan()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGdti()
+	* @see getGcn()
+	*
+	*/
+	public static String getGtin ( ) {
+		return gtin;
+	}
+
+
+
+
+/**
+	* The Global Trade Item Number (GTIN) comes from the family of GS1 codes and is used for tracking trade items using barcodes. Each item receives its unique GTIN number.This function allows you to generate random random GTIN codes or partly random codes for specific manufacturers and items depending on the input parameters.The legacy names for a GTIN are:<ul><li>EAN - European (International) Article Number</li><li>UCC - Uniform Code Council</li><li>UPC - Universal Product Code (North American, since 1970)</li><li>CIP - Catalogue Item. Publication</li><li>JAN - Japanese Article Number</li><li>SSCC - Serial Shipping Container Code (this is a variant of the GTIN number</li></ul>More information on <a href="http://www.gtin.info/">GTIN</a>.<a href="http://www.gs1.org/">GS1</a>: International not-for-profit association dedicated to the development and implementation of global specifications and solutions to improve the efficiency and visibility of supply and demand chains globally and across multiple sectors.
+	*
+	* @param type The type of GTIN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the GTIN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random GTIN  number of type $type.
+	* @see getEan()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGdti()
+	* @see getGcn()
+	*
+	*/
+	public static String getGtin ( $type ) {
+		return gtin;
+	}
+
+
+
+
+/**
+	* The Global Trade Item Number (GTIN) comes from the family of GS1 codes and is used for tracking trade items using barcodes. Each item receives its unique GTIN number.This function allows you to generate random random GTIN codes or partly random codes for specific manufacturers and items depending on the input parameters.The legacy names for a GTIN are:<ul><li>EAN - European (International) Article Number</li><li>UCC - Uniform Code Council</li><li>UPC - Universal Product Code (North American, since 1970)</li><li>CIP - Catalogue Item. Publication</li><li>JAN - Japanese Article Number</li><li>SSCC - Serial Shipping Container Code (this is a variant of the GTIN number</li></ul>More information on <a href="http://www.gtin.info/">GTIN</a>.<a href="http://www.gs1.org/">GS1</a>: International not-for-profit association dedicated to the development and implementation of global specifications and solutions to improve the efficiency and visibility of supply and demand chains globally and across multiple sectors.
+	*
+	* @param type The type of GTIN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the GTIN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random GTIN  number of type $type with the prefix $prefill
+	* @see getEan()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGdti()
+	* @see getGcn()
+	*
+	*/
+	public static String getGtin ( $type, $prefill ) {
+		return gtin;
+	}
+
+
+
+
+/**
+	* The European (later International) Article Number function behaves in exactly the same way as the GTIN function.Check the GTIN function for more details.
+	*
+	* @param type The type of EAN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random EAN-13 (GTIN-13) number
+	* @see get()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getEan ( ) {
+		return ean;
+	}
+
+
+
+
+/**
+	* The European (later International) Article Number function behaves in exactly the same way as the GTIN function.Check the GTIN function for more details.
+	*
+	* @param type The type of EAN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random EAN number of type $type.
+	* @see get()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getEan ( $type ) {
+		return ean;
+	}
+
+
+
+
+/**
+	* The European (later International) Article Number function behaves in exactly the same way as the GTIN function.Check the GTIN function for more details.
+	*
+	* @param type The type of EAN number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random EAN number of type $type with the prefix $prefill
+	* @see get()
+	* @see getUcc()
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getEan ( $type, $prefill ) {
+		return ean;
+	}
+
+
+
+
+/**
+	* The UCC function is an alias of the GTIN (and EAN) functions).Check the GTIN function for more details
+	*
+	* @param type The type of UCC (GTIN or EAN) number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN (GTIN) number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random UCC-13 (TGTIN-13) number
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getUcc ( ) {
+		return ucc;
+	}
+
+
+
+
+/**
+	* The UCC function is an alias of the GTIN (and EAN) functions).Check the GTIN function for more details
+	*
+	* @param type The type of UCC (GTIN or EAN) number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN (GTIN) number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random UCC (GTIN)  number of type $type.
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getUcc ( $type ) {
+		return ucc;
+	}
+
+
+
+
+/**
+	* The UCC function is an alias of the GTIN (and EAN) functions).Check the GTIN function for more details
+	*
+	* @param type The type of UCC (GTIN or EAN) number to generate.These Types are supported:<table class="borderTable"><tr><th>Type</th><th>GTIN</th><th>Aliases</th></tr><tr><td>8</td><td>GTIN-8</td><td>EAN-8 UCC-8</td></tr><tr><td>12</td><td>GTIN-12</td><td>EAN-12 UCC-12 UPC</td></tr><tr><td>13</td><td>GTIN-13</td><td>EAN-13 UCC-13 EAN CIP JAN</td></tr><tr><td>14</td><td>GTIN-14</td><td>EAN-14 UCC-14</td></tr><tr><td>18</td><td>na</td><td>SSCC</td></tr></table>
+	* @param prefill The prefix to be used in the EAN (GTIN) number (used to define the retailer, manufacturer, collector, researcher, or other entity)
+	* @return Returns a random UCC (GTIN) number of type $type with the prefix $prefill
+	* @see getCip()
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGrai()
+	* @see getGcn()
+	*
+	*/
+	public static String getUcc ( $type, $prefill ) {
+		return ucc;
+	}
+
+
+
+
+/**
+	* A business message standard from the Data Source to the Source Data Pool to publish an item within the Global Data Synchronisation Network. The CIP can be used to publish the item to a specific Data Recipient or a specific Target Market.This function returns random CIP numbers or partly random numers to identify specific items.CIP is a number form the GS1 family.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random CIP number
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGln()
+	* @see getGcn()
+	*
+	*/
+	public static String getCip ( ) {
+		return cip;
+	}
+
+
+
+
+/**
+	* A business message standard from the Data Source to the Source Data Pool to publish an item within the Global Data Synchronisation Network. The CIP can be used to publish the item to a specific Data Recipient or a specific Target Market.This function returns random CIP numbers or partly random numers to identify specific items.CIP is a number form the GS1 family.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random CIP number with a prefix $prefill
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGln()
+	* @see getGcn()
+	*
+	*/
+	public static String getCip ( $prefill ) {
+		return cip;
+	}
+
+
+
+
+/**
+	* The Japanese article number function makes valid and random article numbers.Based on the parameter, specifi prefixes can be configured.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random JAN number
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGln()
+	*
+	*/
+	public static String getJan ( ) {
+		return jan;
+	}
+
+
+
+
+/**
+	* The Japanese article number function makes valid and random article numbers.Based on the parameter, specifi prefixes can be configured.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random JAN number with a prefix $prefill
+	* @see getJan()
+	* @see getUpc()
+	* @see getSscc()
+	* @see getGln()
+	*
+	*/
+	public static String getJan ( $prefill ) {
+		return jan;
+	}
+
+
+
+
+/**
+	* The Universal Product Code (UPC) is a barcode symbology  that is widely used in North America, the United Kingdom, Australia, New Zealand and in other countries for tracking trade items in stores.Source: <a href="http://en.wikipedia.org/wiki/Universal_Product_Code">wiki/Universal_Product_Code</a>This function allows to generate random UPC codes.The UPC code is actually a GTIN-12 family code as defined by the GS1.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random UPC number
+	* @see getSscc()
+	* @see getGln()
+	*
+	*/
+	public static String getUpc ( ) {
+		return upc;
+	}
+
+
+
+
+/**
+	* The Universal Product Code (UPC) is a barcode symbology  that is widely used in North America, the United Kingdom, Australia, New Zealand and in other countries for tracking trade items in stores.Source: <a href="http://en.wikipedia.org/wiki/Universal_Product_Code">wiki/Universal_Product_Code</a>This function allows to generate random UPC codes.The UPC code is actually a GTIN-12 family code as defined by the GS1.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random UPC number with a prefix $prefill
+	* @see getSscc()
+	* @see getGln()
+	*
+	*/
+	public static String getUpc ( $prefill ) {
+		return upc;
+	}
+
+
+
+
+/**
+	* The Serial Shipping Container Code(SSCC) function returns random numbers used for articles in shipping.The SSCC is the GS1 Identification Key for an item of any composition established for transport and/or storage which needs to be managed through the supply chain. The SSCC is assigned for the life time of the transport item and is a mandatory element on the GS1 Logistic Label using Application Identifier (00)Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/sscc">GS1/SSCC</a>
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random but valid SSCC number
+	* @see getGsrn()
+	*
+	*/
+	public static String getSscc ( ) {
+		return sscc;
+	}
+
+
+
+
+/**
+	* The Serial Shipping Container Code(SSCC) function returns random numbers used for articles in shipping.The SSCC is the GS1 Identification Key for an item of any composition established for transport and/or storage which needs to be managed through the supply chain. The SSCC is assigned for the life time of the transport item and is a mandatory element on the GS1 Logistic Label using Application Identifier (00)Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/sscc">GS1/SSCC</a>
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random SSCC number with a prefix $prefill
+	* @see getGsrn()
+	*
+	*/
+	public static String getSscc ( $prefill ) {
+		return sscc;
+	}
+
+
+
+
+/**
+	* The Global Location Number (GLN) is part of the GS1 systems of standards. It is a simple tool used to identify a location and can identify locations uniquely where required.This function produces artificial Global Location Numbers with or without specific Company Prefixes and Location References.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GLN number
+	*
+	*/
+	public static String getGln ( ) {
+		return gln;
+	}
+
+
+
+
+/**
+	* The Global Location Number (GLN) is part of the GS1 systems of standards. It is a simple tool used to identify a location and can identify locations uniquely where required.This function produces artificial Global Location Numbers with or without specific Company Prefixes and Location References.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GLN number with a prefix $prefill
+	*
+	*/
+	public static String getGln ( $prefill ) {
+		return gln;
+	}
+
+
+
+
+/**
+	* The GRAI is the GS1 Identification Key for types of reusable package or transport equipment that are considered an asset. It is used to enable tracking as well as recording of all relevant data associated with the individual asset or asset reference. The GRAI is is assigned for the life time of the asset and may be bar coded using Application Identifier.This function can produce GRAI codes.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/grai">http://www.gs1.org/barcodes/technical/idkeys/grai</a>p
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GRAI number
+	* @see getGdti()
+	*
+	*/
+	public static String getGrai ( ) {
+		return grai;
+	}
+
+
+
+
+/**
+	* The GRAI is the GS1 Identification Key for types of reusable package or transport equipment that are considered an asset. It is used to enable tracking as well as recording of all relevant data associated with the individual asset or asset reference. The GRAI is is assigned for the life time of the asset and may be bar coded using Application Identifier.This function can produce GRAI codes.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/grai">http://www.gs1.org/barcodes/technical/idkeys/grai</a>p
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GRAI number with a prefix $prefill
+	* @see getGdti()
+	*
+	*/
+	public static String getGrai ( $prefill ) {
+		return grai;
+	}
+
+
+
+
+/**
+	* The Global Service Relation Number (GSRN) is the GS1 Identification Key used to identify the service provider and/or service recipient in any service relationship.  The GSRN itself has no meaning and this allows the coupon to be looked-up in a database and its associated information retrieved at any point or location. Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gsrn">http://www.gs1.org/barcodes/technical/idkeys/gsrn</a>pThis method generates random Global Service Relation Numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random but valid GSRN number
+	* @see getGdti()
+	* @see getGsin()
+	*
+	*/
+	public static String getGsrn ( ) {
+		return gsrn;
+	}
+
+
+
+
+/**
+	* The Global Service Relation Number (GSRN) is the GS1 Identification Key used to identify the service provider and/or service recipient in any service relationship.  The GSRN itself has no meaning and this allows the coupon to be looked-up in a database and its associated information retrieved at any point or location. Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gsrn">http://www.gs1.org/barcodes/technical/idkeys/gsrn</a>pThis method generates random Global Service Relation Numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GSRN number with a prefix $prefill
+	* @see getGdti()
+	* @see getGsin()
+	*
+	*/
+	public static String getGsrn ( $prefill ) {
+		return gsrn;
+	}
+
+
+
+
+/**
+	* The GDTI is the Identification Key for a document type combined with an optional, alpha-numeric serial number and used to access database information that is required for document control purposes. The GDTI is assigned for the life time of the document type and may be bar coded using Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gdti">http://www.gs1.org/barcodes/technical/idkeys/gdti</a>pThis method produces artificial GDTI numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GDTI number
+	* @see getGsin()
+	*
+	*/
+	public static String getGdti ( ) {
+		return gdti;
+	}
+
+
+
+
+/**
+	* The GDTI is the Identification Key for a document type combined with an optional, alpha-numeric serial number and used to access database information that is required for document control purposes. The GDTI is assigned for the life time of the document type and may be bar coded using Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gdti">http://www.gs1.org/barcodes/technical/idkeys/gdti</a>pThis method produces artificial GDTI numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GDTI number with a prefix $prefill
+	* @see getGsin()
+	*
+	*/
+	public static String getGdti ( $prefill ) {
+		return gdti;
+	}
+
+
+
+
+/**
+	* The GSIN is the GS1 Identification Key used to identify a grouping of logistics units that comprise a shipment from one consignor to one consignee (buyer) referencing a despatch advice and/or BOL. The GS1 Identification Key is comprised of a GS1 Company Prefix, Shipper Reference and Check Digit using the Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gsin">http://www.gs1.org/barcodes/technical/idkeys/gsin</a>The GSIN function produces random and artificial valid GSINs.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GSIN number with a prefix $prefill
+	*
+	*/
+	public static String getGsin ( $prefill ) {
+		return gsin;
+	}
+
+
+
+
+/**
+	* The GSIN is the GS1 Identification Key used to identify a grouping of logistics units that comprise a shipment from one consignor to one consignee (buyer) referencing a despatch advice and/or BOL. The GS1 Identification Key is comprised of a GS1 Company Prefix, Shipper Reference and Check Digit using the Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gsin">http://www.gs1.org/barcodes/technical/idkeys/gsin</a>The GSIN function produces random and artificial valid GSINs.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random but valid GSIN number
+	*
+	*/
+	public static String getGsin ( ) {
+		return gsin;
+	}
+
+
+
+
+/**
+	* The GCN is the GS1 Identification Key used to identify a coupon. The GCN will identify a coupon uniquely thus ensuring that it is always identified correctly anywhere in the world. Each coupon that is different from another is allocated a separate, unique GCN. The GCN itself has no meaning and this allows the coupon to be looked-up in a database and its associated information retrieved at any point or location. The GCN is normally assigned by the Coupon Issuer using Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gcn">http://www.gs1.org/barcodes/technical/idkeys/gcn</a>This function produces random GS1 valid Global Coupon Numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GCN number
+	*
+	*/
+	public static String getGcn ( ) {
+		return gcn;
+	}
+
+
+
+
+/**
+	* The GCN is the GS1 Identification Key used to identify a coupon. The GCN will identify a coupon uniquely thus ensuring that it is always identified correctly anywhere in the world. Each coupon that is different from another is allocated a separate, unique GCN. The GCN itself has no meaning and this allows the coupon to be looked-up in a database and its associated information retrieved at any point or location. The GCN is normally assigned by the Coupon Issuer using Application Identifier.Source: <a href="http://www.gs1.org/barcodes/technical/idkeys/gcn">http://www.gs1.org/barcodes/technical/idkeys/gcn</a>This function produces random GS1 valid Global Coupon Numbers.
+	*
+	* @param prefill The optional parameter to indicate a specific range
+	* @return Returns a random GCN number with a prefix $prefill
+	*
+	*/
+	public static String getGcn ( $prefill ) {
+		return gcn;
+	}
+
+
+
+
+/**
+	* Generates a number of sentences with random words that form a paragraph.The number of sentences per paragraph can be set to a fixed value or to a variable range using the parameters.Only standard Latin characters will be returned.With this method, you no longer need to rely on the old Lorem Ipsum text.
+	*
+	* @param sentences the fixed number of sentences to generate in a paragraph
+	* @param minumum the mimimum number of sentences to generate
+	* @param maximum the maximumnumber of sentences to generate
+	* @return Returns a random number of sentences in the range $minimum to $maximum
+	*
+	*/
+	public static String getParagraph ( $minimum , $maximum ) {
+		return paragraph;
+	}
+
+
+
+
+/**
+	* This method adds padding characters to the beginning of a string until it reaches a certain lenght.You can define the length of the string and the padding to be used.
+	*
+	* @param subject The string (or number) to be lengthened
+	* @param length the length of the target string after adding padding
+	* @param padding  The string to be added to the subject as paddingNote: If the padding string is longer than one character, the length of the target string can become larger than $length
+	* @return Returns the string $subject with length length padded with $padding characters
+	* @see getRightpad()
+	*
+	*/
+	public static String getLeftpad ( $subject , $length , $padding ) {
+		return leftpad;
+	}
+
+
+
+
+/**
+	* This method adds padding characters to the end of a string until it reaches a certain lenght.You can define the length of the string and the padding to be used.
+	*
+	* @param subject The string (or number) to be lengthened
+	* @param length the length of the target string after adding padding
+	* @param padding  The string to be added to the subject as paddingNote: If the padding string is longer than one character, the length of the target string can become larger than $length
+	* @return Returns the string $subject with length length padded with $padding characters
+	*
+	*/
+	public static String getRightpad ( $subject , $length , $padding ) {
+		return rightpad;
+	}
+
+
+
+
+/**
+	* The OGM-number is used in Belgium to automate bank payments.<ul><li><strong>Gestructureerde Mededeling</strong> in Dutch</li><li>Numéro d’OGM in French</li></ul>This function produces random, but valid MOD97, numbers accepted by automated bank transfer systems in Belgium.
+	*
+	* @param prefill The value to start the ogm number with (can not be longer than 10 characters).
+	* @return Returns a completely random OGM number
+	*
+	*/
+	public static String getOgm ( ) {
+		return ogm;
+	}
+
+
+
+
+/**
+	* The OGM-number is used in Belgium to automate bank payments.<ul><li><strong>Gestructureerde Mededeling</strong> in Dutch</li><li>Numéro d’OGM in French</li></ul>This function produces random, but valid MOD97, numbers accepted by automated bank transfer systems in Belgium.
+	*
+	* @param prefill The value to start the ogm number with (can not be longer than 10 characters).
+	* @return Returns a random ogm number with the prefill value used as prefix
+	*
+	*/
+	public static String getOgm ( $prefill ) {
+		return ogm;
+	}
+
+
