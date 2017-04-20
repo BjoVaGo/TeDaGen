@@ -24,7 +24,7 @@ public class TeDaGenFunctionConfig {
     }
 
     public boolean readJsonConfig ()
-            throws FileNotFoundException,
+            throws
             IOException, ParseException {
 
         JSONParser parser = new JSONParser();
